@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,500,900);
+
 /* *{border: 1px solid orange;} */
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -14,7 +16,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: 'Archivo',  'Raleway';
+  font-family: 'Roboto', sans-serif;
   color: #222; 
 max-height: 100%;
 overflow-x: hidden;}
@@ -33,11 +35,29 @@ body, html{max-width: 100%;}
 /* fonts */
 h1, p{color: #E2E1E1; text-align: center;}
 *{color: #E2E1E1;}
-h1, h2, h3, h4, h5, h6{font-family: 'Archivo'; color: #fff;}
+h1, h2, h3, h4, h5, h6{font-family: 'Roboto'; color: #fff; letter-spacing: 1px;}
 h1{font-size: 3.2rem; font-weight: 900;}
-h2{font-size: 2.5rem; font-weight: 600;}
+h2{font-size: 2.5rem; font-weight: 500;}
 h3{font-size: 2.3rem; margin-top: 20px;}
-p{font-family: 'Raleway'; font-size: 1.6;}
+p{font-family: 'Roboto'; font-weight: 300; font-size: 1.6rem;}
+
+/* links */
+a{text-decoration: none; color: #E2E1E1;}
+a:hover{text-decoration: none; color: #E2E1E1;}
+
+/* color links */
+.colorLink1{box-shadow: inset 0px -0.3em 0px -2px #f1a037;}
+.colorLink1:hover{opacity: 0.8; box-shadow: inset 0px -0.3em 0px -2px #ff9f21;}
+.colorLink2{box-shadow: inset 0px -0.3em 0px -2px #ee7058;}
+.colorLink3{box-shadow: inset 0px -0.3em 0px -2px #434972;}
+.colorLink4{box-shadow: inset 0px -0.3em 0px -2px #0a344e;}
+
+/* Color section */
+.colorLine{height: 30px;}
+.color1{background-color: #f1a037;}
+.color2{background-color: #ee7058;}
+.color3{background-color: #434972;}
+.color4{background-color: #0a344e;}
 
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -96,7 +116,7 @@ p{font-family: 'Raleway'; font-size: 1.6;}
 .hamburger div{
   width: 25px;
   height: 3px;
-  background-color: #E2E1E1;
+  background-color: #fff;
   margin: 5px;
   transition: all 0.3s ease;}
 .icon{
@@ -150,7 +170,7 @@ top: 0;}
 .socialInstaFollow{background-color: #231f20;
   color: #fff;
   padding: 0;
-margin: 0;}
+margin: 13vh 0px 0px 0px;}
 .socialInstaFollow a{text-decoration: none;
   color: #fff;}
 .socialInstaFollow a:hover{color: #fddf32;}
@@ -176,12 +196,7 @@ hr{height: 3px;
   height: auto;}
 .alba{padding-top: 8vh;}
 
-/* Color section */
-.colorLine{height: 30px;}
-.color1{background-color: #FABE65;}
-.color2{background-color: #FF9E76;}
-.color3{background-color: #745395;}
-.color4{background-color: #012C64;}
+
 
 /* company logos */
 .companyLogoSection{padding: 5vh 20px;}
@@ -194,12 +209,12 @@ hr{height: 3px;
 
   /* Timer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#timerSeconds, #timerHours, #timerDays, #timerMinutes{ text-align: center; font-size: 2rem; font-family: 'Archivo'; font-weight: 600; color: #E2E1E1; padding: 0;  margin: 0;}
-#timerSeconds{color: #FABE65;}
+#timerSeconds, #timerHours, #timerDays, #timerMinutes{ text-align: center; font-size: 2rem; font-family: 'Roboto'; font-weight: 600; color: #E2E1E1; padding: 0;  margin: 0;}
+#timerSeconds{color: #ee7058;}
 .timerContainer{display: flex;
   justify-content: center;}
-.timerSection{    padding: 8vh 20px;}
-.timerSection h2{color: #fff; text-align: center; text-transform: uppercase; font-weight: 600; letter-spacing: 1px; padding-bottom: 20px;}
+.timerSection{    padding: 8vh 0px;}
+.timerSection h2{color: #fff; text-align: center; text-transform: uppercase; font-weight: 500; letter-spacing: 1px; padding-bottom: 20px;}
 .timerSpecificContainer{
   width: 90px; margin: 0px -10px;}
 .pointsTimer{margin: 0; padding: 0; font-weight: 600; color: #E2E1E1;}
@@ -209,9 +224,11 @@ hr{height: 3px;
 
 /* footer nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.footerNav{  text-align: center;
-  padding: 10vh 1px 2vh 1px;}
-.footerNav a{color: #E2E1E1;}
+.footerNav{  text-align: center;}
+.footerNav a{    color: #fff;
+  margin-top: 2px;
+  font-size: 1.6rem;
+font-weight: 300;}
 .footerNav a:hover {
   box-shadow: inset 0px -0.5em 0 #fddf326b;
 }
@@ -229,7 +246,7 @@ hr{height: 3px;
   /* intro */
 .intro{padding: 10vh 20px 8vh 20px;}
 .intro p{max-width: 450px; margin: auto;}
-.intro a {color: #fddf32; text-decoration: none; font-weight: 600;}
+/* .intro a {color: #FABE65; text-decoration: none; font-weight: 600;} */
 
 /* links next to map */
 
@@ -239,6 +256,10 @@ hr{height: 3px;
 .linkMap:hover{color: #fddf32; cursor: pointer;}
 .continentsMenu li{list-style: none; padding:  5px;}
 
+/* the team section */
+.theTeam{margin: 10vh 20px;}
+.theTeam h3{text-align: center; text-transform: uppercase;}
+.col-sm-8{padding: 0; margin: 0;}
 
 /* map on modal */
 .mapLocation{      margin: 0;
@@ -267,7 +288,7 @@ hr{height: 3px;
 /* map */
 .modal-fullscreen, .modal-body {background-color: #231f20; max-width: 900px; max-height: 400px; margin: auto;}
 .map{padding: 5vh 20px 8vh 20px;}
-.mapImg{padding-bottom: 8vh;}
+.mapImg{padding-bottom: 8vh; max-width: 1000px; margin: auto;}
 }
 
 @media screen and (min-width: 900px) { .mapImg{padding-bottom: 0;}
