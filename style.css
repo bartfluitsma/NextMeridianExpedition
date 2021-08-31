@@ -334,6 +334,10 @@ h2{font-size: 3rem; font-weight: 600;}
   position: relative;
   padding: 6vh 20px 6vh 20px;}
 
+/* about us section homepage */
+.aboutUsSplit{display: flex; padding: 10vh 20px 5vh 20px;}
+.theTeam{width: 30%;}
+.containerCards{width: 70%;}
 
 }
 
@@ -393,7 +397,18 @@ nav li {
   width: 50px;
 }
 
+.companyLogoCointainer {
+  padding: 3vh 20px 5vh 20px;
+}
+
 }
 
 @media screen and (min-width: 1000px) {
-    .slick-slide img{display:block;height:auto;max-height:220px; object-fit:cover;flex:25%;}}
+    .slick-slide img{display:block;height:auto;max-height:220px; object-fit:cover;flex:25%;}
+}
+
+@media screen and (min-width: 1200px) {
+.aboutUsSplit{ max-width: 60%; margin: auto;}
+.containerCards{width: 60%; margin-left: 5vw;}
+.theTeam{width: 40%;}
+}
