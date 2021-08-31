@@ -34,19 +34,21 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="cards.css">
 
-
 <!-- Boostrap JS -->
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <!-- jQuery google CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<!-- cards about -->
+<script defer src="cards.js"></script>
+
 <!-- slick Slider CDN -->
 <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!-- JS script -->
 <script defer src="main.js"></script>
-<script defer src="cards.js"></script>
+
 
 </head>
 <body>
@@ -68,18 +70,21 @@
               
     <ul class="nav-ul" id="nav-ul">
       <li><a class="colorLink1" href="#">Route</a></li>
-      <li><a class="colorLink2"  href="#">Equipment</a></li>
-      <li><a class="borderLink colorLink3"  href="#">Follow the journey</a></li>
-      <li><a class="colorLink4"  href="#">About</a></li>
-
+      <li><a class="borderLink"  href="#">Follow the journey</a></li>
+      <li><a class="colorLink2"  href="#">About</a></li>
+      <li><a class="colorLink3"  href="#">Contact</a></li>
       <li>
         <div class="social-icons-nav">
           <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank">
-        <img class="invert logoInsta" src="images/Icons/instagram.svg" alt="instagram"></a>
+        <img class="logoInsta" src="images/Icons/instagram-light.svg" alt="instagram"></a>
+        <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank">
+          <img class="logoInsta" src="images/Icons/facebook-icon.svg" alt="instagram"></a>
+          <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank">
+            <img class="logoInsta" src="images/Icons/youtube-icon.svg" alt="instagram"></a>
         </div>
       </li>
     </ul>
-    </nav>
+</nav>
 
 <!-- main picture -->
 <section class="mainImgSection">
@@ -93,7 +98,7 @@
 <!-- Intro -->
 <section class="intro">
     <h1>NEXT MERIDIAN EXPEDITION</h1>
-    <p>Hi! We are Nick & Mathilde and left everything behind to go on a world tour in our fully modified Landrover <i>'Albatross'</i>. Over the course of<strong> 3 years</strong> we will explore <strong>7 continents </strong>and drive over<strong> 300.000km</strong>! <a href="#" class="colorLink1">Read our story.</a></p>
+    <p>Hi! Nice to see you here. <br> We are Nick & Mathilde and we've left everything behind to go on world tour in our fully modified Landrover Defender <i>'Albatross'</i>. <br><br> <strong>3 years - 7 continents - 88 countries - 300.000km</strong> </p>
 </section>
 
 <!-- map with links -->
@@ -172,65 +177,55 @@
 
 <!-- about us section -->
 <section class="theTeam">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>The team</h3>
-      <p>We're highly motivated.. bla bla.. Couple who love to... <strong>See different cultures</strong>.. grown up in.. bla bla. <a href="#" class="colorLink1">Lorem ipsum</a> Maiores at atque doloribus alias accusamus esse?</p>
-    </div>
-
-    <div class="col-sm-8">
-
-      <div class="containerCards">
-        <div class="card-carousel">
-          <div class="card" id="1">
-            <div class="image-container"></div>
-              <h4>Mathilde</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo! <a href="#" class="colorLink2">Read more</a></p>
-          </div>
-          <div class="card" id="2">
-            <div class="image-container"></div>
-            <h4>Nicolas</h4>
-            <p>Ha! I'm so bad at COD! No, really, it's crazy bad. <a href="#" class="colorLink3">Read more</a></p>
-          </div>
-          <div class="card" id="3">
-            <div class="image-container"></div>
-            <h4>Albatross (the Beast)</h4>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo! <a href="#" class="colorLink1">Read more</a></p>
-
-          </div>  
-    </div>
-  </div>  
-</div>
-</div>
-</div>
+  <h3>The team</h3>
+    <p>1 adventure, unlimited realities. <br>
+        Everything is possible, we chose to get out there and explore the unknown. 
+        Nature is available, explore it.
+    </p>
 </section>
 
-<!-- <div class="col-md">
-  <ul class="continentsMenu">
-  <li data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="miscIcon" src="images/Icons/misc/compass.svg" alt="Compass" srcset="images/Icons/misc/compass.svg 20w" width="25" height="auto"><span class="openGPS"><span class="linkMap">Current GPS position</span>
-  </li>
-  <ul class="continentsMenu">
-      <li><img class="miscIcon" src="images/Icons/misc/gallery.svg" alt="Gallery" srcset="images/Icons/misc/gallery.svg 20w" width="25" height="auto"><span class="open"><span class="linkMap">View Gallery</span>
-  </li>
-  <ul class="continentsMenu">
-      <li><img class="miscIcon" src="images/Icons/misc/route.svg" alt="Route" srcset="images/Icons/misc/route.svg 20w" width="25" height="auto"><span class="open"><span class="linkMap">Our Journey</span>
-  </li>
-  <ul class="continentsMenu">
-      <li><img class="miscIcon" src="images/Icons/misc/couple.svg" alt="Couple" srcset="images/Icons/misc/couple.svg 20w" width="30" height="auto"><span class="open"><span class="linkMap">About us</span>
-  </li>
-  <ul class="continentsMenu">
-  <li><img class="miscIconBig" src="images/Icons/misc/jeep.svg" alt="Jeep" srcset="images/Icons/misc/jeep.svg 20w" width="35" height="auto"><span class="open"><span class="linkMap">Equipment</span>
-  </li>
-</ul>
-</div> -->
+<div class="containerCards">
+  <div class="card-carousel">
+    <div class="card" id="1">
+      <div class="image-container"></div>
+        <h4>Mathilde Vougny (Chew)</h4>
+      <p>Born in France, lived in Europe 26 years, 1 year in Argentina and 1 year in Jordan. <a class="colorLink1" href="#">Read more</a></p>
+    </div>
+    <div class="card" id="2">
+      <div class="image-container"></div>
+      <h4>Nicolas Chazee (Nick)</h4>
+      <p> Born in Thailand, lived in Asia for 12 years, 6 in Africa and 10 in Europe. Previously travelled.. <a class="colorLink3" href="#">Read more</a></p>
+    </div>
+    <div class="card" id="3">
+      <div class="image-container"></div>
+      <h4>Albatross, 9 y/o (Albo)</h4>
 
+      <p>Land Rover Defender, TD4 2.2L Turbo Diesel Puma, 2012 model. Ex-Tec interior and pop-up.. <a href="#" class="colorLink1">Read more</a></p>
+
+    </div>  
+</div>
+</div> 
+
+<br>
+
+<!--Company logos section-->
+<section class="companyLogoCointainer">
+  <p class="publications"><strong>Publications</strong></p> <br>
+  <div class="companyLogos">
+      <div>
+      <a class="logoLink" href="https://www.explmore.com/publication-stories/nicolas-and-mathilde-next-meridian-expedition" target="_blank" rel="noopener noreferrer">
+          <img class="companyLogo" src="./Images/Icons/Companies/explmore-logo-color.svg" alt="logo-Explmore"></a>
+      </div>
+      <div>
+      <a class="logoLink" href="http://blog.euro4x4parts.com/en/4x4travel.html#!en_cours/article/6356/Next_Meridian_Expedition" target="_blank" rel="noopener noreferrer">
+          <img class="companyLogo" src="./Images/Icons/Companies/4X4-logo-color.svg" alt="logo-4X4"></a>
+      </div>
+  </div>
+</section>
 
 <!-- Images carousel -->
-
 <div class="socialInstaFollow">
-  <p><strong>Follow our journey on <a href="" class="colorLink2"> Instagram</a></strong></p>
+  <p><strong>Follow our journey</strong></p>
 <br>
 <section class="imageCarouselSection">
     <div class="your-class">
@@ -259,19 +254,28 @@
         </div>
 </section>
 
-
 <!--Company logos section-->
-<section class="companyLogoCointainer">
-  <div class="companyLogos">
+<section class="followUsContainer">
+  <div class="followUsLogos">
+
+    <div>
+      <a class="logoLink" href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
+          <img class="followUsIcon" src="./Images/Icons/instagram-light.svg" alt="Instagram icon"></a>
+      </div>
+
       <div>
-      <a class="logoLink" href="https://www.explmore.com/publication-stories/nicolas-and-mathilde-next-meridian-expedition" target="_blank" rel="noopener noreferrer">
-          <img class="companyLogo" src="./Images/Icons/Companies/explmore-logo.svg" alt="logo-Explmore"></a>
+      <a class="logoLink" href="https://www.youtube.com/channel/UCapIpfhCivH01j0loaFW2sw/featured" target="_blank" rel="noopener noreferrer">
+          <img class="followUsIcon" src="./Images/Icons/youtube-icon.svg" alt="Youtube Icon"></a>
       </div>
-      <a class="logoLink" href="http://www.euro4x4parts.com/" target="_blank" rel="noopener noreferrer">
-          <img class="companyLogo" src="./Images/Icons/Companies/logo-4X4.png" alt="logo-4X4"></a>
-      </div>
+
+      <div>
+        <a class="logoLink" href="https://www.facebook.com/NextMeridian.Expedition/" target="_blank" rel="noopener noreferrer">
+            <img class="followUsIcon" src="./Images/Icons/facebook-icon.svg" alt="facebook-icon"></a>
+        </div>
+
   </div>
 </section>
+
 
 <!--Footer navigation-->
   <nav class="footerNav primaryColor">
@@ -282,14 +286,6 @@
   <div class="colorLine color3"><a class="footerNavItem" href="#">About</a></div>
   <div class="colorLine color4"><a class="footerNavItem" href="#">The Adventure</a></div>
 </div>
-      <!-- <p>
-        <a class="copyrightWebsite" href="http://nextmeridianexpedition.live/">Next Meridian Expedition &#169; 2021</a>
-        <a class="footerNavItem open">GPS position</a>
-        <a class="footerNavItem" href="#">Gallery</a>
-        <a class="footerNavItem" href="#">Route</a>
-        <a class="footerNavItem" href="#">About</a>
-        <a class="footerNavItem" href="#">Equipment</a>
-      </p> -->
       </nav>
 
 </body>

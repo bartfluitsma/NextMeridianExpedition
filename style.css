@@ -36,10 +36,11 @@ body, html{max-width: 100%;}
 h1, p{color: #E2E1E1; text-align: center;}
 *{color: #E2E1E1;}
 h1, h2, h3, h4, h5, h6{font-family: 'Roboto'; color: #fff; letter-spacing: 1px;}
-h1{font-size: 3.2rem; font-weight: 900;}
+h1{font-size: 4rem; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
 h2{font-size: 2.5rem; font-weight: 500;}
 h3{font-size: 2.3rem; margin-top: 20px;}
 p{font-family: 'Roboto'; font-weight: 300; font-size: 1.6rem;}
+.theTeam h3{font-size: 3.6rem; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
 
 /* links */
 a{text-decoration: none; color: #E2E1E1;}
@@ -101,7 +102,7 @@ a:hover{text-decoration: none; color: #E2E1E1;}
     color: #fff;  }
 .nav-ul.show{
     transform: translateX(0%);}
-    .nav-ul a:hover{color: #fddf32;}
+    .nav-ul a:hover{color: #f1a037;}
 .navTitle{padding-left: 20px;
   font-size: 2rem;
   color: #fff;
@@ -136,7 +137,7 @@ a:hover{text-decoration: none; color: #E2E1E1;}
 .hamburgerFlip .line3{
   transform: rotate(45deg) translate(-5px,-6px);}
 .borderLink{border: 2px solid #fff;     padding: 5px 15px;}
-.borderLink:hover{border: 2px solid #fddf32;}
+.borderLink:hover{border: 2px solid #f1a037;}
 
 /* main image */
 .mainImgSection{margin-top: -90px;}
@@ -147,7 +148,7 @@ a:hover{text-decoration: none; color: #E2E1E1;}
 .miscIconBig{margin-right: 15px; max-width: 35px;}
 .linkMap{    text-decoration: none;
     box-shadow: inset 0px -0.2em 0 #ffffff6b; }
-.linkMap:hover{color: #fddf32; cursor: pointer;}
+.linkMap:hover{color: #f1a037; cursor: pointer;}
 .continentsMenu li{list-style: none; padding:  5px;}
 
 /* map popup */
@@ -167,14 +168,17 @@ top: 0;}
   color: #fff;
   margin: 0;
   padding: 4vh 0vw;}
-.socialInstaFollow{background-color: #231f20;
+.socialInstaFollow {background-color: #231f20;
   color: #fff;
   padding: 0;
-margin: 13vh 0px 0px 0px;}
+margin-top: 5vh;}
 .socialInstaFollow a{text-decoration: none;
   color: #fff;}
-.socialInstaFollow a:hover{color: #fddf32;}
+.socialInstaFollow a:hover{color: #f1a037;}
 .logoInstaSlider{margin-right: 10px; width: 20px;}
+.socialInstaFollow{text-transform: uppercase ;}
+.social-icons-nav{height: 45px;}
+.social-icons-nav a{height: 55px; padding: 12px; margin-top: 30px;}
 
 /* about us */
 .map h2{text-align: center; padding-bottom: 5vh;}
@@ -196,16 +200,28 @@ hr{height: 3px;
   height: auto;}
 .alba{padding-top: 8vh;}
 
-
+/* follow us logos */
+.followUsContainer{position: relative; height: 120px;}
+.followUsLogos{margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+display: flex;}
+.followUsIcon{width: auto;  height: 45px; padding: 10px;}
+.followUsIcon:hover{opacity: 0.7;}
 
 /* company logos */
+.publications{text-transform: uppercase;}
 .companyLogoSection{padding: 5vh 20px;}
-.companyLogo{width: 150px;  filter: brightness(0.5);}
+.companyLogo{width: 150px;  filter: grayscale(1); height: 30px;}
+.companyLogo:hover{width: 150px;  filter: none; height: 30px;}
 .companyLogos{display: flex; max-width: 900px; justify-content: center; margin: auto;}
 .logoLink{padding: 0 3px ;}
 .companyLogoCointainer {
   position: relative;
   padding: 6vh 20px 6vh 20px;}
+
 
   /* Timer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -253,11 +269,12 @@ font-weight: 300;}
 .miscIcon{    margin-right: 15px; }
 .linkMap{    text-decoration: none;
     box-shadow: inset 0px -0.2em 0 #ffffff6b; }
-.linkMap:hover{color: #fddf32; cursor: pointer;}
+.linkMap:hover{color: #f1a037; cursor: pointer;}
 .continentsMenu li{list-style: none; padding:  5px;}
 
 /* the team section */
-.theTeam{margin: 10vh 20px;}
+.theTeam{margin: 10vh 20px 5vh 20px}
+.theTeam p{max-width: 500px; margin: auto;}
 .theTeam h3{text-align: center; text-transform: uppercase;}
 .col-sm-8{padding: 0; margin: 0;}
 
@@ -311,7 +328,6 @@ h2{font-size: 3rem; font-weight: 600;}
 
 /* company logos */
 .companyLogoSection{padding: 5vh 20px;}
-.companyLogo{width: 150px;  filter: brightness(0.5);}
 .companyLogos{display: flex; max-width: 900px; justify-content: center; margin: auto;}
 .logoLink{padding: 0 20px ;}
 .companyLogoCointainer {
@@ -332,36 +348,50 @@ h2{font-size: 3rem; font-weight: 600;}
   display: inline-block;}
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
+.colorLink1{box-shadow: none;}
+.colorLink2{box-shadow: none;}
+.colorLink3{box-shadow: none;}
+.colorLink4{box-shadow: none;}
+
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */  
+.mainNav{display: flex;}
+.logo{position: inherit;}
 #hamburger {
   display: none;}
   .mainNav {
     display: flex;
     justify-content: space-between;
-    position: absolute;
     z-index: 1;
-    width: 100%;}
+    width: 100%;
+  flex-wrap: nowrap;
+padding-top: 10px;}
 .nav-ul {
-    min-height: 100%;
     flex-direction: row;
     align-items: center;
     transform: translateX(0%);
     transition: none;
     background-color: transparent;
     z-index: 1;
-    position: absolute;
     padding: 0;
     list-style-type: none;
     margin: 0;
     justify-content: flex-end;
     padding-right: 20px;
-    align-items: center;}
+    align-items: center;
+  position: inherit;}
 nav li {
   margin-right: 15px;
   margin-left: 15px;}
 .nav-ul a, .socialFollowIconNav .fab  {color: #fff;}
+
+.social-icons-nav a {
+  height: 25px;
+  padding: 0 12px;
+  margin-top: 10px;
+  width: 50px;
+}
 
 }
 
