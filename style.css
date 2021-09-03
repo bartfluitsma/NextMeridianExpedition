@@ -21,6 +21,9 @@ body {
 max-height: 100%;
 overflow-x: hidden;}
 
+/* hide on mobile */
+.hideOnMobile{display: none;}
+
 /* slick slider */
 .slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.slick-slide img{display:block;height:auto;max-height:150px;object-fit:cover;flex:25%;}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}.slick-prev, .slick-arrow{display: none !important;}
 
@@ -36,7 +39,7 @@ body, html{max-width: 100%;}
 h1, p{color: #E2E1E1; text-align: center;}
 *{color: #E2E1E1;}
 h1, h2, h3, h4, h5, h6{font-family: 'Roboto'; color: #fff; letter-spacing: 1px;}
-h1{font-size: 4rem; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
+h1{font-size: 5vw; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
 h2{font-size: 2.5rem; font-weight: 500;}
 h3{font-size: 2.3rem; margin-top: 20px;}
 p{font-family: 'Roboto'; font-weight: 300; font-size: 1.6rem;}
@@ -59,6 +62,9 @@ a:hover{text-decoration: none; color: #E2E1E1;}
 .color2{background-color: #ee7058;}
 .color3{background-color: #434972;}
 .color4{background-color: #0a344e;}
+
+/* color text */
+.colorText1{color: #f11515;}
 
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -108,7 +114,8 @@ a:hover{text-decoration: none; color: #E2E1E1;}
   color: #fff;
   padding-top: 15px;}
 .logoInsta{width: 25px;
-  margin-top: -5px;}
+  margin-top: -5px;filter: grayscale() brightness(1.5);}
+.logoInsta:hover{filter: grayscale(0) brightness(1);}
 
 /*hamburger*/
 #hamburger{
@@ -179,6 +186,7 @@ margin-top: 5vh;}
 .socialInstaFollow{text-transform: uppercase ;}
 .social-icons-nav{height: 45px;}
 .social-icons-nav a{height: 55px; padding: 12px; margin-top: 30px;}
+.followUsText{text-transform: uppercase; margin-top: 5vh; font-size: 1.8rem;}
 
 /* about us */
 .map h2{text-align: center; padding-bottom: 5vh;}
@@ -200,8 +208,11 @@ hr{height: 3px;
   height: auto;}
 .alba{padding-top: 8vh;}
 
+
 /* follow us logos */
-.followUsContainer{position: relative; height: 120px;}
+.followUsContainer{position: relative;
+    height: 5px;
+    margin: 5vh;}
 .followUsLogos{margin: 0;
   position: absolute;
   top: 50%;
@@ -212,11 +223,17 @@ display: flex;}
 .followUsIcon:hover{opacity: 0.7;}
 
 /* company logos */
-.publications{text-transform: uppercase;}
+.publications{text-transform: uppercase; font-size: 1.8rem;}
+.smallTxt{font-size: 1.4rem; margin-bottom: 5vh;}
 .companyLogoSection{padding: 5vh 20px;}
-.companyLogo{width: 150px;  filter: grayscale(1); height: 30px;}
-.companyLogo:hover{width: 150px;  filter: none; height: 30px;}
-.companyLogos{display: flex; max-width: 900px; justify-content: center; margin: auto;}
+.companyLogo{width: 100%;
+  filter: grayscale(1);
+  height: 80px;
+  padding: 5px 25px;
+  max-width: 440px;
+}
+.companyLogo:hover{filter: none;}
+.companyLogos{display: block; max-width: 100%; justify-content: center; margin: auto;}
 .logoLink{padding: 0 3px ;}
 .companyLogoCointainer {
   position: relative;
@@ -225,11 +242,12 @@ display: flex;}
 
   /* Timer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#timerSeconds, #timerHours, #timerDays, #timerMinutes{ text-align: center; font-size: 2rem; font-family: 'Roboto'; font-weight: 600; color: #E2E1E1; padding: 0;  margin: 0;}
-#timerSeconds{color: #ee7058;}
+#timerSeconds, #timerHours, #timerDays, #timerMinutes{text-align: center; font-size: 2rem; font-family: 'Roboto'; font-weight: 600; padding: 0;  margin: 0; color: #FFF500}
+
 .timerContainer{display: flex;
   justify-content: center;}
-.timerSection{    padding: 8vh 0px;}
+.timerSection{padding: 7vh 0px 8vh 0px;}
+.timerSectionAboutPage{padding: 0vh 20px 8vh 20px !important; margin-top: 0;}
 .timerSection h2{color: #fff; text-align: center; text-transform: uppercase; font-weight: 500; letter-spacing: 1px; padding-bottom: 20px;}
 .timerSpecificContainer{
   width: 90px; margin: 0px -10px;}
@@ -237,6 +255,7 @@ display: flex;}
 
 /* main image */
 .mainImg{width: 100%; height: 50vh; z-index: -10; object-fit: cover;}
+.mainImgAboutUs{object-position: bottom;}
 
 /* footer nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -296,6 +315,44 @@ font-weight: 300;}
   border-radius: 5px;
   margin-top: 10px;}
 
+.imageCarouselSection{margin-bottom: 15vh;}
+.imageCarouselSectionAboutPage{margin-bottom: 8vh;}
+
+/* About us page */
+.textAbout{padding: 20px;}
+.introAbout h1{font-size: 10vw;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 3vh;}
+
+/* mathilde */
+.infoMat{margin-bottom: 8vh;}
+.infoMat p{text-align: left;}
+
+/* nicolas */
+.infoNic{margin-bottom: 8vh;}
+.infoNic p{text-align: left;}
+
+/* albo */
+.infoAlb{margin-bottom: 8vh;}
+.infoAlb p{text-align: left;}
+
+/* ROUTE PAGE */
+.titleLegs{text-align: center; padding: 8vh 10px;}
+.legsRouteSection{padding: 20px;}
+
+/* CONTACT PAGE */
+.contactUs p{max-width: 600px; margin: auto;}
+.contactImg{height: 30px; margin: 0; padding: 0; filter: grayscale() brightness(1.5);}
+.contactImg:hover{filter: grayscale(0) brightness(1);}
+.contactRow{margin: auto 20px; margin-bottom: 10vh;}
+.contactUsImg{margin: auto; margin-bottom: 10vh;}
+.contactUs div div div{display: flex; width: auto; margin: auto; align-content: center; align-items: center;}
+
+/* ADVENTURE PAGE */
+.youtubeContainer{max-width: 800px; margin: auto; padding:0 20px 5vh 20px;}
+iframe{min-height: 200px;}
+
 @media screen and (min-width: 600px) {
 .mainImg{height: 100vh;}
 
@@ -306,6 +363,28 @@ font-weight: 300;}
 .modal-fullscreen, .modal-body {background-color: #231f20; max-width: 900px; max-height: 400px; margin: auto;}
 .map{padding: 5vh 20px 8vh 20px;}
 .mapImg{padding-bottom: 8vh; max-width: 1000px; margin: auto;}
+
+.intro p{margin-top: 7vh;}
+
+/* About us page */
+.introAbout h1{font-size: 5rem;}
+.infoMat, .infoNic, .infoAlb{max-width: 500px; margin: auto; padding: 5vh 0px}
+
+
+/* Route page */
+.legsRouteSection img{max-height: 300px; padding-bottom: 5vh;}
+.legsRouteSection{padding: 5vh 20px 10vh 20px;}
+
+
+/* CONTACT PAGE */
+.contactRow{width: 500px; margin: auto; margin-bottom: 10vh;}
+.contactUsImg{max-width: 500px; margin: auto;}
+.contactImg{height: 50px;}
+.contactUs div div div{display: block; width: auto; margin: auto; align-content: center; align-items: center;}
+
+/* ADVENTURE PAGE */
+.youtubeContainer{max-width: 80%; margin: auto;}
+iframe{min-height: 300px;}
 }
 
 @media screen and (min-width: 900px) { .mapImg{padding-bottom: 0;}
@@ -313,7 +392,7 @@ font-weight: 300;}
 hr{width: 20%;}
 
 /* fonts */
-h1{font-size: 3.5rem; font-weight: 900;}
+h1{font-size: 4.5rem; font-weight: 900;}
 h2{font-size: 3rem; font-weight: 600;}
 
 
@@ -329,15 +408,35 @@ h2{font-size: 3rem; font-weight: 600;}
 /* company logos */
 .companyLogoSection{padding: 5vh 20px;}
 .companyLogos{display: flex; max-width: 900px; justify-content: center; margin: auto;}
-.logoLink{padding: 0 20px ;}
+.logoLink{padding: 0 10px ;}
 .companyLogoCointainer {
   position: relative;
   padding: 6vh 20px 6vh 20px;}
 
 /* about us section homepage */
-.aboutUsSplit{display: flex; padding: 10vh 20px 5vh 20px;}
-.theTeam{width: 30%;}
-.containerCards{width: 70%;}
+.aboutUsSplit{display: flex; padding: 15vh 20px 12vh 20px;}
+.theTeam{width: 45%;}
+.containerCards{width: 55%;}
+.roundImgSmall{min-width: 90px; min-height: 90px; border-radius: 50%;}
+.imageNic{background-image: url(/Images/the-team/Nicolas.JPG); background-position: center; background-size: cover;margin-right: 20px;}
+.imageMat{background-image: url(/Images/the-team/mathilde.JPG); background-position: center; background-size: cover;margin-right: 20px;}
+.imageAlb{background-image: url(/Images/the-team/Albatross.JPG); background-position: center; background-size: cover;margin-right: 20px;}
+.aboutUsContainer{display: flex; width: 80%; max-width: 800px; margin: auto; align-items: center; margin-bottom: 35px;}
+.aboutUsContainer:last-child{  margin-bottom:0; }
+.containerAboutList{padding-right: 50px; width: 60%;}
+.aboutUsContainer p{text-align: left; margin: 0;}
+
+.theTeam h3{margin-top: 0;}
+
+/* dont show on dekstop */
+.hideOnDesktop{display: none;}
+
+/* show on desktop*/
+.hideOnMobile{display: block;}
+
+/* ADVENTURE PAGE */
+.youtubeContainer{max-width: 800px; margin: auto;}
+iframe{min-height: 400px;}
 
 }
 
@@ -353,10 +452,10 @@ h2{font-size: 3rem; font-weight: 600;}
 }
 
 @media screen and (min-width: 800px) {
-.colorLink1{box-shadow: none;}
+/* .colorLink1{box-shadow: none;}
 .colorLink2{box-shadow: none;}
 .colorLink3{box-shadow: none;}
-.colorLink4{box-shadow: none;}
+.colorLink4{box-shadow: none;} */
 
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */  
@@ -397,6 +496,11 @@ nav li {
   width: 50px;
 }
 
+.nav-ul li .colorLink1{box-shadow: none;}
+.nav-ul li .colorLink2{box-shadow: none;}
+.nav-ul li .colorLink3{box-shadow: none;}
+.nav-ul li .colorLink4{box-shadow: none;}
+
 .companyLogoCointainer {
   padding: 3vh 20px 5vh 20px;
 }
@@ -405,10 +509,16 @@ nav li {
 
 @media screen and (min-width: 1000px) {
     .slick-slide img{display:block;height:auto;max-height:220px; object-fit:cover;flex:25%;}
+
+    /* About us page */
+.introAbout h1{font-size: 5rem;}
+.infoMat, .infoNic, .infoAlb{display: flex; max-width: 100%; align-items: center; align-content: center; margin: auto;     padding-left: 20vh;
+}
+.infoMat img, .infoNic img, .infoAlb img{width: 30%;}
+.textAbout{width: 50%;}
 }
 
 @media screen and (min-width: 1200px) {
-.aboutUsSplit{ max-width: 60%; margin: auto;}
-.containerCards{width: 60%; margin-left: 5vw;}
-.theTeam{width: 40%;}
+  /* About us page */
+.infoMat, .infoNic, .infoAlb{max-width: 80%;}
 }
