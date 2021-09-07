@@ -12,6 +12,16 @@
 <!--Let the robots follow-->
 <meta name="robots" content="index, follow">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B540DBZ55"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3B540DBZ55');
+</script>
+
 <!-- https://fonts.gstatic.com is the font file origin -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,6 +236,10 @@
 <div class="colorLine color3"><a class="footerNavItem" href="contact.html">Contact</a></div>
 </div>
 </nav>
+
+<script>
+  var countDownDate=new Date("Apr 18, 2022 08:00:00").getTime(),x=setInterval(function(){var e=(new Date).getTime(),t=countDownDate-e,n=Math.floor(t/864e5),r=Math.floor(t%864e5/36e5),o=Math.floor(t%36e5/6e4),m=Math.floor(t%6e4/1e3);document.getElementById("timerDays").innerHTML=n,document.getElementById("timerHours").innerHTML=r,document.getElementById("timerMinutes").innerHTML=o,document.getElementById("timerSeconds").innerHTML=m,t<0&&(clearInterval(x),document.getElementById("timer").innerHTML="EXPIRED")},1e3);
+  </script>
 
 </body>
 </html>
