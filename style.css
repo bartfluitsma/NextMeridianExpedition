@@ -366,7 +366,9 @@ iframe{min-height: 200px;}
 /* gps positon */
 .GPSpositionBox{width: 250px; margin: auto;}
 
-.lineBreak{color: orange; opacity: 1;}
+/* logos sponsors */
+.lineBreak{color: orange; opacity: 1; width: 75%;}
+.smallLogo{padding: 22px;}
 
 @media screen and (min-width: 600px) {
 .mainImg{height: 100vh;}
