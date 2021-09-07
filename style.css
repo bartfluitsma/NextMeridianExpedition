@@ -327,7 +327,7 @@ font-weight: 300;}
   letter-spacing: 2px;
   margin-bottom: 3vh;}
 .infoMat img, .infoNic img, .infoAlb img{min-width: 200px; min-height: 200px;width: 200px; height: 200px; max-width: 200px; max-height: 200px; object-fit: cover; margin: auto; border-radius: 50%;}
-.infoMat div:first-child, .infoNic div:first-child, .infoAlb div:first-child{width: 100px; margin: auto;}
+.infoMat div:first-child, .infoNic div:first-child, .infoAlb div:first-child{width: 200px; margin: auto;}
 .infoMat img{object-position: right;}
 
 /* mathilde */

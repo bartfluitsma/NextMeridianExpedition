@@ -59,15 +59,15 @@
   
   
   .card:nth-of-type(1) .image-container {
-      background-image: url("Images/the-team/mathilde.JPG");
+      background-image: url("Images/the-team/Chew-world-traveller-mathilde.webp");
   }
    
   .card:nth-of-type(2) .image-container {
-    background-image: url("Images/the-team/Nicolas.JPG")
+    background-image: url("Images/the-team/Nick-traveller-world-tour.webp")
   }
   
   .card:nth-of-type(3) .image-container {
-    background-image: url("Images/the-team/Albatross.JPG")
+    background-image: url("Images/the-team/Landrover-albo-world-tour.webp")
   }
   
   
