@@ -40,7 +40,7 @@
 <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- slick Slider CDN -->
-<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!-- JS script -->
 <script defer src="main.js"></script>
@@ -55,35 +55,36 @@
 <!-- navigation menu  -->
 <nav class="mainNav">
 
-    <!--Logo-->
-    <div class="logo">
-      <a href="index.html"><img class="logo-img" src="./Images/Icons/Albatross.svg" alt="Logo"></a>
-    </div>
-              
-    <!--the hamburger comes before the UL becuase we want to drop it down from here, but we want to flex it with the image above-->
-    <div class="hamburger" id="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-              
-    <ul class="nav-ul" id="nav-ul">
-        <li><a class="colorLink1" href="route.html">Route</a></li>
-        <li><a class="borderLink"  href="adventure.html">Follow the journey</a></li>
-        <li><a class="colorLink2"  href="about.html">About</a></li>
-        <li><a class="colorLink3"  href="contact.html">Contact</a></li>
-        <li>
-          <div class="social-icons-nav">
-            <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank">
-          <img class="logoInsta" src="images/Icons/instagram-icon-color.svg" alt="instagram"></a>
-          <a href="https://www.facebook.com/NextMeridian.Expedition/" class="socialFollowIconNav" target="_blank">
-            <img class="logoInsta" src="images/Icons/facebook-icon-color.svg" alt="instagram"></a>
-            <a href="https://www.youtube.com/channel/UCapIpfhCivH01j0loaFW2sw/featured" class="socialFollowIconNav" target="_blank">
-              <img class="logoInsta" src="images/Icons/youtube-icon-color.svg" alt="instagram"></a>
-          </div>
-        </li>
-      </ul>
-  </nav>
+  <!--Logo-->
+  <div class="logo">
+    <a href="index.html"><img class="logo-img" src="./Images/Icons/Albatross.svg" alt="Logo"></a>
+  </div>
+            
+  <!--the hamburger comes before the UL becuase we want to drop it down from here, but we want to flex it with the image above-->
+  <div class="hamburger" id="hamburger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+            
+  <ul class="nav-ul" id="nav-ul">
+    <li><a class="colorLink1" href="index.html">Home</a></li>
+    <li><a class="colorLink2" href="route.html">Route</a></li>
+    <li><a class="borderLink"  href="adventure.html">Follow the journey</a></li>
+    <li><a class="colorLink3"  href="about.html">About</a></li>
+    <li><a class="colorLink4"  href="contact.html">Contact</a></li>
+    <li>
+      <div class="social-icons-nav">
+        <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank">
+      <img class="logoInsta" src="images/Icons/instagram-icon-color.svg" alt="instagram"></a>
+      <a href="https://www.facebook.com/NextMeridian.Expedition/" class="socialFollowIconNav" target="_blank">
+        <img class="logoInsta" src="images/Icons/facebook-icon-color.svg" alt="instagram"></a>
+        <a href="https://www.youtube.com/c/nextmeridianexpedition" class="socialFollowIconNav" target="_blank">
+          <img class="logoInsta" src="images/Icons/youtube-icon-color.svg" alt="instagram"></a>
+      </div>
+    </li>
+  </ul>
+</nav>
 
 
 <!-- Intro -->
@@ -93,13 +94,13 @@
 
 <!-- YOUTUBE -->
 <div class="youtubeContainer">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8smLfGJydA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8smLfGJydA0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <!--follow us section-->
 <p class="followUsText"><strong>Follow our journey</strong></p>
 
-<section class="followUsContainer">
+<div class="followUsContainer">
   <div class="followUsLogos">
     <div>
       <a class="logoLink" href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
@@ -107,7 +108,7 @@
       </div>
 
       <div>
-      <a class="logoLink" href="https://www.youtube.com/channel/UCapIpfhCivH01j0loaFW2sw/featured" target="_blank" rel="noopener noreferrer">
+      <a class="logoLink" href="https://www.youtube.com/c/nextmeridianexpedition" target="_blank" rel="noopener noreferrer">
           <img class="followUsIcon" src="./Images/Icons/youtube-icon.svg" alt="Youtube Icon"></a>
       </div>
 
@@ -117,39 +118,40 @@
         </div>
 
   </div>
-</section>
+</div>
 
 <!-- Images carousel -->
 <div class="socialInstaFollow">
-<br>
-<a href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
-<section class="imageCarouselSection imageCarouselSectionAboutPage">
-    <div class="your-class">
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep.JPG" alt="" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/cave-water-iceland.JPG" alt=""></div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep-iceland.JPG" alt="" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/nicolas-iceland.JPG" alt="" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/albatross.JPG" alt="" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/jeep-iceland-roads.JPG" alt="" loading="lazy"></div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/house-iceland.JPG" alt="" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/the-team.JPG" alt="" loading="lazy">
-        </div>
-        </div>
-      </a>
-</section>
+  <br>
+  <a href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
+  <div class="imageCarouselSection imageCarouselSectionAboutPage">
+      <div class="your-class">
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep.JPG" alt="" loading="lazy">
+          </div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/cave-water-iceland.JPG" alt=""></div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep-iceland.JPG" alt="" loading="lazy">
+          </div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/nicolas-iceland.JPG" alt="" loading="lazy">
+          </div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/albatross.JPG" alt="" loading="lazy">
+          </div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/jeep-iceland-roads.JPG" alt="" loading="lazy"></div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/house-iceland.JPG" alt="" loading="lazy">
+          </div>
+          <div>
+              <img src="images/Social-media/Instagram/Thumbnails/the-team.JPG" alt="" loading="lazy">
+          </div>
+          </div>
+  </div>
+  </a>
+  </div>
 
 <!-- countdown -->
 <!--timer section-->
@@ -182,15 +184,15 @@
 
 
 <!--Footer navigation-->
-  <nav class="footerNav primaryColor">
-    <!-- colors brand -->
+<nav class="footerNav primaryColor">
+  <!-- colors brand -->
 <div class="colors">
-  <div class="colorLine color1"><a class="footerNavItem" href="route.html">Route</a></div>
-  <div class="colorLine color2"><a class="footerNavItem" href="about.html">About</a></div>
-  <div class="colorLine color3"><a class="footerNavItem" href="contact.html">Contact</a></div>
-  <div class="colorLine color4"><a class="footerNavItem" href="adventure.html">The Adventure</a></div>
+<div class="colorLine color1"><a class="footerNavItem" href="route.html">Route</a></div>
+<div class="colorLine color2"><a class="footerNavItem" href="about.html">About</a></div>
+<div class="colorLine color4"><a class="footerNavItem" href="adventure.html">The Adventure</a></div>
+<div class="colorLine color3"><a class="footerNavItem" href="contact.html">Contact</a></div>
 </div>
-      </nav>
+</nav>
 
 </body>
 </html>

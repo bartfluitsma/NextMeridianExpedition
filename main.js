@@ -57,6 +57,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+
 // slidejs
 if ($(window).width() < 600) {
   $('.your-class').slick({
@@ -65,14 +66,7 @@ if ($(window).width() < 600) {
     autoplay: true,
     autoplaySpeed: 2000,
   });
-} else if ($(window).width() < 1000) {
-  $('.your-class').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-} else {
+}  else {
   $('.your-class').slick({
     slidesToShow: 5,
     slidesToScroll: 1,

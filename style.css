@@ -39,11 +39,11 @@ body, html{max-width: 100%;}
 h1, p{color: #E2E1E1; text-align: center;}
 *{color: #E2E1E1;}
 h1, h2, h3, h4, h5, h6{font-family: 'Roboto'; color: #fff; letter-spacing: 1px;}
-h1{font-size: 5vw; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
-h2{font-size: 2.5rem; font-weight: 500;}
-h3{font-size: 2.3rem; margin-top: 20px;}
+h1, h2, h3{font-size: 5vw; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
+/* h2{font-size: 2.5rem; font-weight: 500;}
+h3{font-size: 2.3rem; margin-top: 20px;} */
 p{font-family: 'Roboto'; font-weight: 300; font-size: 1.6rem;}
-.theTeam h3{font-size: 3.6rem; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
+.theTeam h3{font-size: 5vw; font-weight: 900; letter-spacing: 2px; margin-bottom: 3vh;}
 
 /* links */
 a{text-decoration: none; color: #E2E1E1;}
@@ -177,8 +177,7 @@ top: 0;}
   padding: 4vh 0vw;}
 .socialInstaFollow {background-color: #231f20;
   color: #fff;
-  padding: 0;
-margin-top: 5vh;}
+  padding: 0;}
 .socialInstaFollow a{text-decoration: none;
   color: #fff;}
 .socialInstaFollow a:hover{color: #f1a037;}
@@ -186,7 +185,7 @@ margin-top: 5vh;}
 .socialInstaFollow{text-transform: uppercase ;}
 .social-icons-nav{height: 45px;}
 .social-icons-nav a{height: 55px; padding: 12px; margin-top: 30px;}
-.followUsText{text-transform: uppercase; margin-top: 5vh; font-size: 1.8rem;}
+.followUsText{text-transform: uppercase; margin-top: 5vh; text-align: center; }
 
 /* about us */
 .map h2{text-align: center; padding-bottom: 5vh;}
@@ -212,7 +211,7 @@ hr{height: 3px;
 /* follow us logos */
 .followUsContainer{position: relative;
     height: 5px;
-    margin: 5vh;}
+    margin: 5vh 0px 12px 0px;}
 .followUsLogos{margin: 0;
   position: absolute;
   top: 50%;
@@ -223,17 +222,16 @@ display: flex;}
 .followUsIcon:hover{opacity: 0.7;}
 
 /* company logos */
-.publications{text-transform: uppercase; font-size: 1.8rem;}
+.publications{text-transform: uppercase; text-align: center;}
 .smallTxt{font-size: 1.4rem; margin-bottom: 5vh;}
 .companyLogoSection{padding: 5vh 20px;}
 .companyLogo{width: 100%;
   filter: grayscale(1);
   height: 80px;
-  padding: 5px 25px;
-  max-width: 440px;
+  padding: 15px 25px;
 }
 .companyLogo:hover{filter: none;}
-.companyLogos{display: block; max-width: 100%; justify-content: center; margin: auto;}
+.companyLogos{display: block; max-width: 500px; justify-content: center; margin: auto;}
 .logoLink{padding: 0 3px ;}
 .companyLogoCointainer {
   position: relative;
@@ -248,7 +246,7 @@ display: flex;}
   justify-content: center;}
 .timerSection{padding: 7vh 0px 8vh 0px;}
 .timerSectionAboutPage{padding: 0vh 20px 8vh 20px !important; margin-top: 0;}
-.timerSection h2{color: #fff; text-align: center; text-transform: uppercase; font-weight: 500; letter-spacing: 1px; padding-bottom: 20px;}
+.timerSection h2{color: #fff; text-align: center; text-transform: uppercase;}
 .timerSpecificContainer{
   width: 90px; margin: 0px -10px;}
 .pointsTimer{margin: 0; padding: 0; font-weight: 600; color: #E2E1E1;}
@@ -279,8 +277,9 @@ font-weight: 300;}
 .column2{order: 2;}
 
   /* intro */
-.intro{padding: 10vh 20px 8vh 20px;}
+.intro{padding: 6vh 20px 8vh 20px;}
 .intro p{max-width: 450px; margin: auto;}
+.intro h1{margin-bottom: 4vh;}
 /* .intro a {color: #FABE65; text-decoration: none; font-weight: 600;} */
 
 /* links next to map */
@@ -292,7 +291,7 @@ font-weight: 300;}
 .continentsMenu li{list-style: none; padding:  5px;}
 
 /* the team section */
-.theTeam{margin: 10vh 20px 5vh 20px}
+.theTeam{margin: 7vh 20px 5vh 20px}
 .theTeam p{max-width: 500px; margin: auto;}
 .theTeam h3{text-align: center; text-transform: uppercase;}
 .col-sm-8{padding: 0; margin: 0;}
@@ -315,13 +314,12 @@ font-weight: 300;}
   border-radius: 5px;
   margin-top: 10px;}
 
-.imageCarouselSection{margin-bottom: 15vh;}
+.imageCarouselSection{margin-bottom:7vh;}
 .imageCarouselSectionAboutPage{margin-bottom: 8vh;}
 
 /* About us page */
 .textAbout{padding: 20px;}
-.introAbout h1{font-size: 10vw;
-  font-weight: 900;
+.introAbout h1{ font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 3vh;}
 
@@ -414,19 +412,20 @@ h2{font-size: 3rem; font-weight: 600;}
   padding: 6vh 20px 6vh 20px;}
 
 /* about us section homepage */
-.aboutUsSplit{display: flex; padding: 15vh 20px 12vh 20px;}
+.aboutUsSplit{display: flex; padding: 15vh 20px 9vh 20px;}
 .theTeam{width: 45%;}
+h2, h3{font-size: 3rem;}
 .containerCards{width: 55%;}
 .roundImgSmall{min-width: 90px; min-height: 90px; border-radius: 50%;}
 .imageNic{background-image: url(/Images/the-team/Nicolas.JPG); background-position: center; background-size: cover;margin-right: 20px;}
 .imageMat{background-image: url(/Images/the-team/mathilde.JPG); background-position: center; background-size: cover;margin-right: 20px;}
 .imageAlb{background-image: url(/Images/the-team/Albatross.JPG); background-position: center; background-size: cover;margin-right: 20px;}
-.aboutUsContainer{display: flex; width: 80%; max-width: 800px; margin: auto; align-items: center; margin-bottom: 35px;}
+.aboutUsContainer{display: flex; width: 80%; max-width: 800px; margin: auto; align-items: center; padding-bottom: 5vh;}
 .aboutUsContainer:last-child{  margin-bottom:0; }
 .containerAboutList{padding-right: 50px; width: 60%;}
 .aboutUsContainer p{text-align: left; margin: 0;}
 
-.theTeam h3{margin-top: 0;}
+.theTeam h3{margin-top: 0; font-size: 4.5rem;}
 
 /* dont show on dekstop */
 .hideOnDesktop{display: none;}
@@ -437,6 +436,9 @@ h2{font-size: 3rem; font-weight: 600;}
 /* ADVENTURE PAGE */
 .youtubeContainer{max-width: 800px; margin: auto;}
 iframe{min-height: 400px;}
+
+/* the team section */
+.theTeam{margin: 22vh 20px 5vh 20px}
 
 }
 
@@ -484,6 +486,8 @@ padding-top: 10px;}
     padding-right: 20px;
     align-items: center;
   position: inherit;}
+  nav ul a {
+    font-size: 1.4rem;}
 nav li {
   margin-right: 15px;
   margin-left: 15px;}
@@ -504,6 +508,8 @@ nav li {
 .companyLogoCointainer {
   padding: 3vh 20px 5vh 20px;
 }
+
+.companyLogosSection{padding-bottom: 10vh;}
 
 }
 
