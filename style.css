@@ -293,7 +293,7 @@ font-weight: 300;}
 
 /* the team section */
 .theTeam{margin: 7vh 20px 5vh 20px}
-.theTeam p{max-width: 500px; margin: auto;}
+.theTeam p{max-width: 400px; margin: auto;}
 .theTeam h3{text-align: center; text-transform: uppercase;}
 .col-sm-8{padding: 0; margin: 0;}
 
@@ -326,8 +326,9 @@ font-weight: 300;}
 .introAbout h1{ font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 3vh;}
-.infoMat img, .infoNic img, .infoAlb img{min-width: 300px; min-height: 300px;width: 300px; height: 300px; max-width: 300px; max-height: 300px; object-fit: cover; margin: auto; border-radius: 50%;}
-.infoMat div:first-child, .infoNic div:first-child, .infoAlb div:first-child{width: 300px; margin: auto;}
+.infoMat img, .infoNic img, .infoAlb img{min-width: 200px; min-height: 200px;width: 200px; height: 200px; max-width: 200px; max-height: 200px; object-fit: cover; margin: auto; border-radius: 50%;}
+.infoMat div:first-child, .infoNic div:first-child, .infoAlb div:first-child{width: 100px; margin: auto;}
+.infoMat img{object-position: right;}
 
 /* mathilde */
 .infoMat{margin-bottom: 8vh;}
@@ -434,9 +435,9 @@ h2{font-size: 3rem; font-weight: 600;}
 h2, h3{font-size: 3rem;}
 .containerCards{width: 55%;}
 .roundImgSmall{min-width: 90px; min-height: 90px; border-radius: 50%;}
-.imageNic{background-image: url(/Images/the-team/Nicolas.JPG); background-position: center; background-size: cover;margin-right: 20px;}
-.imageMat{background-image: url(/Images/the-team/mathilde.JPG); background-position: center; background-size: cover;margin-right: 20px;}
-.imageAlb{background-image: url(/Images/the-team/Albatross.JPG); background-position: center; background-size: cover;margin-right: 20px;}
+.imageNic{background-image: url(/Images/the-team/Nick-traveller-world-tour.webp); background-position: center; background-size: cover;margin-right: 20px;}
+.imageMat{background-image: url(/Images/the-team/Chew-world-traveller-mathilde.webp); background-position:right; background-size: cover;margin-right: 20px;}
+.imageAlb{background-image: url(/Images/the-team/Landrover-albo-world-tour.webp); background-position: center; background-size: cover;margin-right: 20px;}
 .aboutUsContainer{display: flex; width: 80%; max-width: 800px; margin: auto; align-items: center; padding-bottom: 5vh;}
 .aboutUsContainer:last-child{  margin-bottom:0; }
 .containerAboutList{padding-right: 50px; width: 60%;}
@@ -455,7 +456,7 @@ h2, h3{font-size: 3rem;}
 iframe{min-height: 400px;}
 
 /* the team section */
-.theTeam{margin: 22vh 20px 5vh 20px}
+.theTeam{margin: 28vh 20px 5vh 20px}
 
 
 /* text about us homepage lining distance */
