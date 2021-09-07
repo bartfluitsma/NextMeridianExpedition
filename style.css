@@ -10,7 +10,9 @@ html {
   font-size: 62.5%; 
   height: 100%;
 max-width: 100%;
-overflow-x: hidden;}
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
   
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -65,7 +67,7 @@ a:hover{text-decoration: none; color: #E2E1E1;}
 .color4{background-color: #0a344e;}
 
 /* color text */
-.colorText1{color: #f11515;}
+.colorText1{color: #f11515; font-size: 1.9rem;}
 
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -361,9 +363,10 @@ iframe{min-height: 200px;}
 .GPSsection{padding: 4vh 0px;}
 .GPSsection h2, .GPSsection h3{text-align: center;}
 
-
 /* gps positon */
 .GPSpositionBox{width: 250px; margin: auto;}
+
+.lineBreak{color: orange; opacity: 1;}
 
 @media screen and (min-width: 600px) {
 .mainImg{height: 100vh;}
@@ -423,24 +426,30 @@ h2{font-size: 3rem; font-weight: 600;}
 
 /* company logos */
 .companyLogoSection{padding: 5vh 20px;}
-.companyLogos{display: flex; max-width: 900px; justify-content: center; margin: auto;}
+.companyLogos{display: flex; max-width: 900px; justify-content: center; margin: auto; margin-right: 10px;}
 .logoLink{padding: 0 10px ;}
 .companyLogoCointainer {
   position: relative;
   padding: 6vh 20px 6vh 20px;}
+.smallLogo{width: 85%; margin: auto;}
+.bigLogo{height: 85px;
+  margin-left: -20px;
+  margin-top: -10px;}
 
 /* about us section homepage */
 .aboutUsSplit{display: flex; padding: 15vh 20px 9vh 20px;}
 .theTeam{width: 45%;}
 h2, h3{font-size: 3rem;}
 .containerCards{width: 55%;}
-.roundImgSmall{min-width: 90px; min-height: 90px; border-radius: 50%;}
+.roundImgSmall{min-width: 120px; min-height: 120px; border-radius: 50%;}
 .imageNic{background-image: url(/Images/the-team/Nick-traveller-world-tour.webp); background-position: center; background-size: cover;margin-right: 20px;}
 .imageMat{background-image: url(/Images/the-team/Chew-world-traveller-mathilde.webp); background-position:right; background-size: cover;margin-right: 20px;}
 .imageAlb{background-image: url(/Images/the-team/Landrover-albo-world-tour.webp); background-position: center; background-size: cover;margin-right: 20px;}
 .aboutUsContainer{display: flex; width: 80%; max-width: 800px; margin: auto; align-items: center; padding-bottom: 5vh;}
 .aboutUsContainer:last-child{  margin-bottom:0; }
-.containerAboutList{padding-right: 50px; width: 60%;}
+.containerAboutList{padding-right: 5vw;
+  width: 70%;
+  margin-left: -5vw;}
 .aboutUsContainer p{text-align: left; margin: 0;}
 
 .theTeam h3{margin-top: 0; font-size: 4.5rem;}
@@ -456,14 +465,13 @@ h2, h3{font-size: 3rem;}
 iframe{min-height: 400px;}
 
 /* the team section */
-.theTeam{margin: 28vh 20px 5vh 20px}
-
+.theTeam{margin: 28vh 20px 5vh 5vw}
 
 /* text about us homepage lining distance */
 .distanceSpan{padding: 1.8vh 0px;}
 
 /* create border between sponsors and publications */
-.companyBorderLeft{border-left: 1px solid orange; margin-left: -10px;}
+.companyBorderLeft{border-left: 1px solid orange;}
 
 /* third large picture homepage */
 .thirdPicture{margin-bottom: 10vh; margin-top: 0;}
