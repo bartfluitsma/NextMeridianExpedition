@@ -51,6 +51,7 @@ a:hover{text-decoration: none; color: #E2E1E1;}
 
 /* color links */
 .colorLink1{box-shadow: inset 0px -0.3em 0px -2px #f1a037;}
+.colorLinkOrange{box-shadow: inset 0px -0.3em 0px -2px #f1a037;}
 .colorLink1:hover{opacity: 0.8; box-shadow: inset 0px -0.3em 0px -2px #ff9f21;}
 .colorLink2{box-shadow: inset 0px -0.3em 0px -2px #ee7058;}
 .colorLink3{box-shadow: inset 0px -0.3em 0px -2px #434972;}
@@ -223,7 +224,7 @@ display: flex;}
 
 /* company logos */
 .publications{text-transform: uppercase; text-align: center;}
-.smallTxt{font-size: 1.4rem; margin-bottom: 5vh;}
+.smallTxt{font-size: 1.4rem; margin-bottom: 5vh; margin-top: -20px;}
 .companyLogoSection{padding: 5vh 20px;}
 .companyLogo{width: 100%;
   filter: grayscale(1);
@@ -317,11 +318,16 @@ font-weight: 300;}
 .imageCarouselSection{margin-bottom:7vh;}
 .imageCarouselSectionAboutPage{margin-bottom: 8vh;}
 
+/* third large picture homepage */
+.thirdPicture{margin: 5vh 0px;}
+
 /* About us page */
 .textAbout{padding: 20px;}
 .introAbout h1{ font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 3vh;}
+.infoMat img, .infoNic img, .infoAlb img{min-width: 300px; min-height: 300px;width: 300px; height: 300px; max-width: 300px; max-height: 300px; object-fit: cover; margin: auto; border-radius: 50%;}
+.infoMat div:first-child, .infoNic div:first-child, .infoAlb div:first-child{width: 300px; margin: auto;}
 
 /* mathilde */
 .infoMat{margin-bottom: 8vh;}
@@ -350,6 +356,13 @@ font-weight: 300;}
 /* ADVENTURE PAGE */
 .youtubeContainer{max-width: 800px; margin: auto; padding:0 20px 5vh 20px;}
 iframe{min-height: 200px;}
+.centerTitle{text-align: center;}
+.GPSsection{padding: 4vh 0px;}
+.GPSsection h2, .GPSsection h3{text-align: center;}
+
+
+/* gps positon */
+.GPSpositionBox{width: 250px; margin: auto;}
 
 @media screen and (min-width: 600px) {
 .mainImg{height: 100vh;}
@@ -382,7 +395,11 @@ iframe{min-height: 200px;}
 
 /* ADVENTURE PAGE */
 .youtubeContainer{max-width: 80%; margin: auto;}
+.youtubeContainer h2{text-align: center;}
 iframe{min-height: 300px;}
+.centerTitle{text-align: center;}
+.GPSsection{padding: 5vh 0px;}
+
 }
 
 @media screen and (min-width: 900px) { .mapImg{padding-bottom: 0;}
@@ -439,6 +456,16 @@ iframe{min-height: 400px;}
 
 /* the team section */
 .theTeam{margin: 22vh 20px 5vh 20px}
+
+
+/* text about us homepage lining distance */
+.distanceSpan{padding: 1.8vh 0px;}
+
+/* create border between sponsors and publications */
+.companyBorderLeft{border-left: 1px solid orange; margin-left: -10px;}
+
+/* third large picture homepage */
+.thirdPicture{margin-bottom: 10vh; margin-top: 0;}
 
 }
 
@@ -521,7 +548,9 @@ nav li {
 .infoMat, .infoNic, .infoAlb{display: flex; max-width: 100%; align-items: center; align-content: center; margin: auto;     padding-left: 20vh;
 }
 .infoMat img, .infoNic img, .infoAlb img{width: 30%;}
-.textAbout{width: 50%;}
+.textAbout{width: 65%;
+  max-width: 600px;
+  margin: auto;}
 }
 
 @media screen and (min-width: 1200px) {
