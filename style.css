@@ -368,6 +368,7 @@ iframe{min-height: 200px;}
 .adventurediv{padding: 5vh 20px 10vh 20px;}
 .adventurediv h2{text-align: center;}
 .followPatreon{max-width: 500px; margin: auto;}
+.patreonRow{max-width: 900px; margin: auto;}
 
 /* PARTNER PAGE */
 .partner-logo{max-width: 250px;  margin: auto;  padding: 0px 20px 6vh 20px;  filter: grayscale(1);}
