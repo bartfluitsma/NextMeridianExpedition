@@ -34,4 +34,9 @@ if ($(window).width() < 600) {
     autoplay: true,
     autoplaySpeed: 2000,
   });
-}
+};
+
+// passive listener
+document.addEventListener('touchstart', onTouchStart, {passive: true});
+
+
