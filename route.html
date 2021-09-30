@@ -110,9 +110,11 @@
     <div class="container">
         <div class="row">
           <div class="col-md mapImg">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#bigmap">
             <img class="img-fluid" src="Images/world-map-tour-grey.svg" 
             srcset="Images/world-map-tour-grey.svg 1000w"
                     alt="World map with 3 years around the world route" height="100" width="600">
+            </button>
           </div>
         </div>
       </div>
@@ -122,25 +124,102 @@
 <div class="container legsRouteSection">
     <div class="row">
         <div class="col-sm">
-            <h2 class="titleLegs">Leg 1 - Europe | Asia | Australia</h2>            
-            <img class="img-fluid" src="Images/Route/Leg-1-Eurasia.svg" 
-            srcset="Images/Route/Leg-1-Eurasia.svg 1075w"
-                    alt="World map with 3 years around the world route" height="100" width="1075"></div>
-        
-       <div class="col-sm">
-           <h2 class="titleLegs">Leg 2 - Americas</h2>            
-           <img class="img-fluid" src="Images/Route/Leg-2-Americas.svg" 
-            srcset="Images/Route/Leg-2-Americas.svg"
-                    alt="World map with 3 years around the world route" height="100" width="592"></div>
+          <h2 class="titleLegs">Leg 1 - Europe | Asia | Australia</h2>  
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#leg1">
+                <div class="legsRoute1">
+                <img class="img-fluid" src="Images/Route/Leg-1-Eurasia.svg" 
+                srcset="Images/Route/Leg-1-Eurasia.svg 1075w"
+                alt="World map with 3 years around the world route" height="100" width="1075">
+              </div>
+            </button>
+        </div>
 
         <div class="col-sm">
-            <h2 class="titleLegs">Leg 3 - Africa | Middle East | Europe</h2>            
-            <img class="img-fluid" src="Images/Route/Leg-3-Africa.svg" 
-            srcset="Images/Route/Leg-3-Africa.svg"
-                    alt="World map with 3 years around the world route" height="100" width="540"></div>
-    </div>
+          <h2 class="titleLegs">Leg 2 - Americas</h2>  
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#leg2">
+              <div class="legsRoute2">
+                <img class="img-fluid" src="Images/Route/Leg-2-Americas.svg" 
+                srcset="Images/Route/Leg-2-Americas.svg"
+                alt="World map with 3 years around the world route - leg 2 - Americas" height="100" width="1075">
+              </div>
+            </button>
+        </div>
+
+        <div class="col-sm">
+          <h2 class="titleLegs">Leg 3 - Africa | Middle East | Europe</h2>  
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#leg3">
+              <div class="legsRoute3">
+                <img class="img-fluid" src="Images/Route/Leg-3-Africa.svg" 
+                srcset="Images/Route/Leg-3-Africa.svg"
+                alt="World map with 3 years around the world route - leg 3 - Africa | Middle East | Europe" height="100" width="1075">
+              </div>
+            </button>
+        </div>
+
+</div>
 </div>
 
+<!-- popup modal bootstrap -->
+<!-- Modal - bigmap -->
+<div class="modal fade" id="bigmap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="Images/world-map-tour-grey.svg" 
+            srcset="Images/world-map-tour-grey.svg"
+                    alt="World map with 3 years around the world route" height="100" width="540">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal - leg 1 -->
+<div class="modal fade" id="leg1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="Images/Route/Leg-1-Eurasia.svg" 
+            srcset="Images/Route/Leg-1-Eurasia.svg"
+                    alt="World map with 3 years around the world route" height="100" width="540">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal - leg 2 -->
+<div class="modal fade" id="leg2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="Images/Route/Leg-2-Americas.svg" 
+            srcset="Images/Route/Leg-2-Americas.svg"
+                    alt="World map with 3 years around the world route" height="100" width="540">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal - leg 3 -->
+<div class="modal fade" id="leg3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-fluid" src="Images/Route/Leg-3-Africa.svg" 
+            srcset="Images/Route/Leg-3-Africa.svg"
+                    alt="World map with 3 years around the world route" height="100" width="540">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--follow us section-->
 <p class="followUsText"><strong>Follow our journey</strong></p>
@@ -239,7 +318,16 @@
 </nav>
 
 <script>
+  
   var countDownDate=new Date("Apr 18, 2022 08:00:00").getTime(),x=setInterval(function(){var e=(new Date).getTime(),t=countDownDate-e,n=Math.floor(t/864e5),r=Math.floor(t%864e5/36e5),o=Math.floor(t%36e5/6e4),m=Math.floor(t%6e4/1e3);document.getElementById("timerDays").innerHTML=n,document.getElementById("timerHours").innerHTML=r,document.getElementById("timerMinutes").innerHTML=o,document.getElementById("timerSeconds").innerHTML=m,t<0&&(clearInterval(x),document.getElementById("timer").innerHTML="EXPIRED")},1e3);
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myModal.handleUpdate()
+  
+})
   </script>
 
 </body>
