@@ -11,7 +11,7 @@ html {
   height: 100%;
 max-width: 100%;
 overflow-x: hidden;
-scroll-behavior: smooth;
+scroll-behavior: smooth !important;
 }
   
 body {
@@ -224,6 +224,7 @@ display: flex;}
 .followUsIcon{width: auto;  height: 45px; padding: 10px;}
 .followUsIcon:hover{opacity: 0.7;}
 
+
 /* company logos */
 .publications{text-transform: uppercase; text-align: center;}
 .smallTxt{font-size: 1.4rem; margin-bottom: 5vh; margin-top: -20px;}
@@ -362,6 +363,20 @@ iframe{min-height: 200px;}
 .centerTitle{text-align: center;}
 .GPSsection{padding: 4vh 0px;}
 .GPSsection h2, .GPSsection h3{text-align: center;}
+.patreonlogo{max-width: 250px; margin: auto; padding: 5vh 20px 8vh 20px; filter: grayscale(1);}
+.patreonlogo:hover{filter: none; cursor: pointer;}
+.adventurediv{padding: 5vh 20px 10vh 20px;}
+.adventurediv h2{text-align: center;}
+.followPatreon{max-width: 500px; margin: auto;}
+
+/* PARTNER PAGE */
+.partner-logo{max-width: 250px;  margin: auto;  padding: 0px 20px 6vh 20px;  filter: grayscale(1);}
+.partner-logoBart{max-width: 250px;  margin: auto;  padding: 0px 20px 6vh 20px;  filter: grayscale(1);}
+.partnerDiv{padding: 0vh 20px 10vh 20px;}
+.partnerDiv h2{text-align: center;}
+.partner-logo:hover{filter: none; cursor: pointer;} 
+.partner-logoBart:hover{filter: none; cursor: pointer;} 
+.partnerText{max-width: 500px;  margin: auto;}
 
 /* gps positon */
 .GPSpositionBox{width: 250px; margin: auto;}
@@ -405,6 +420,17 @@ iframe{min-height: 200px;}
 iframe{min-height: 300px;}
 .centerTitle{text-align: center;}
 .GPSsection{padding: 5vh 0px;}
+.patreonlogo{max-width: 350px; }
+.adventurediv{padding: 16vh 20px 12vh 20px;}
+
+/* PARTNERS */
+.partner-logo{padding-top: 18vh; max-width: 380px;} 
+.partner-logoBart{padding-top: 11vh; max-width: 380px;} 
+.partnerText{margin: 0;}
+.partnerText p{text-align: left;}
+.partnerDiv h2{text-align: left;}
+.logo-44{padding-right: 15px;}
+
 
 }
 
