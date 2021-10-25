@@ -103,8 +103,11 @@
 
 <!-- main picture -->
 <div class="mainImgSection">
-    <img class="img-fluid mainImg" src="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg" 
-                   alt="Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover" height="100" width="1920">
+     <picture>
+      <source media="(max-width: 600px)" srcset="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-500.jpg" sizes="100%">
+      <source media="(min-width: 601px)" srcset="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg">
+      <img class="img-fluid mainImg" src="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg" alt="Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover">
+   </picture>
 </div>
 
 <!-- Intro -->
@@ -157,7 +160,11 @@
 
 <!-- fullwidth img second -->
 <div class="fullWidthImg">
-    <img class="img-fluid mainImg" src="Images/Images-pages/Albatross-in-iceland-Home2-1920.webp" 
+  <img class="img-fluid mainImg mobileimage" src="Images/Images-pages/Albatross-in-iceland-Home2-500.jpg" 
+            alt="Albatross driving in Iceland" height="100" width="500">
+  <img class="img-fluid mainImg tabletimage" src="Images/Images-pages/Albatross-in-iceland-Home2-900.jpg" 
+            alt="Albatross driving in Iceland" height="100" width="900">
+  <img class="img-fluid mainImg dekstopimage" src="Images/Images-pages/Albatross-in-iceland-Home2-1920.jpg" 
             alt="Albatross driving in Iceland" height="100" width="1920">
 </div>
 
