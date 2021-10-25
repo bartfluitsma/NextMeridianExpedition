@@ -99,12 +99,13 @@
 
 <!-- main picture -->
 <div class="mainImgSection">
-    <img class="img-fluid mainImg mainImgAboutUs" src="Images/the-team/Mathilde-Nicolas-and-Albatross-600.webp" 
-           srcset="Images/the-team/Mathilde-Nicolas-and-Albatross-600.webp 600w,
-           Images/the-team/Mathilde-Nicolas-and-Albatross-900.webp 900w,
-           Images/the-team/Mathilde-Nicolas-and-Albatross-1920.webp 1920w"
-           sizes="(min-width:600px) 1920px, 600px"
-                   alt="Mathilde-Nicolas-and-Albatross" height="100" width="1920">
+<picture>
+      <source media="(max-width: 600px)" srcset="Images/the-team/Mathilde-Nicolas-and-Albatross-900.jpg" sizes="100%">
+      <source media="(min-width: 601px)" srcset="Images/the-team/Mathilde-Nicolas-and-Albatross-1920.jpg">
+      <img class="img-fluid mainImg mainImgAboutUs" src="Images/the-team/Mathilde-Nicolas-and-Albatross-1920.jpg" 
+      alt="Mathilde-Nicolas-and-Albatross" height="100" width="100">
+</picture>
+
 </div>
 
 <!-- Intro -->
@@ -127,7 +128,7 @@
 <!-- About us information -->
 <section>
   <div id="Mathilde" class="infoMat">
-    <div><img src="images/the-team/Chew-world-traveller-mathilde.webp" alt=""></div>
+    <div><img src="images/the-team/Chew-world-traveller-mathilde.jpg" alt="Chew-world-traveller-mathilde"></div>
       <div class="textAbout">
         <h2><strong>Mathilde Vougny, 28 y/o (Chew)</strong></h2>
         <p><i>FRANCE</i></p>
@@ -139,7 +140,7 @@
     </div>
   </div>
   <div id="Nicolas" class="infoNic">
-    <div><img src="images/the-team/Nick-traveller-world-tour.webp" alt=""></div>
+    <div><img src="images/the-team/Nick-traveller-world-tour.jpg" alt="Nick-traveller-world-tour"></div>
       <div class="textAbout">
         <h2><strong>Nicolas Chazee, 27 y/o (Nick)</strong></h2>
         <p><i>FRANCE/ITALY</i></p>
@@ -151,7 +152,7 @@
     </div>
   </div>
   <div id="Albatross" class="infoAlb">
-    <div><img src="images/the-team/Landrover-albo-world-tour.webp" alt="Albatross landrover"></div>
+    <div><img src="images/the-team/Landrover-albo-world-tour.jpg" alt="Albatross landrover"></div>
     
       <div class="textAbout">
         <h2><strong>Albatross, 9 y/o (Albo)</strong></h2>

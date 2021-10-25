@@ -424,7 +424,7 @@ iframe{min-height: 200px;}
 
 
 /* CONTACT PAGE */
-.contactRow{width: 500px; margin: auto; margin-bottom: 10vh;}
+.contactRow{width: 550px; margin: auto; margin-bottom: 10vh;}
 .contactUsImg{max-width: 500px; margin: auto;}
 .contactImg{height: 50px;}
 .contactUs div div div{display: block; width: auto; margin: auto; align-content: center; align-items: center;}
@@ -486,9 +486,9 @@ h2{font-size: 3rem; font-weight: 600;}
 h2, h3{font-size: 3rem;}
 .containerCards{width: 55%;}
 .roundImgSmall{min-width: 120px; min-height: 120px; border-radius: 50%;}
-.imageNic{background-image: url(/Images/the-team/Nick-traveller-world-tour.webp); background-position: center; background-size: cover;margin-right: 20px;}
-.imageMat{background-image: url(/Images/the-team/Chew-world-traveller-mathilde.webp); background-position:right; background-size: cover;margin-right: 20px;}
-.imageAlb{background-image: url(/Images/the-team/Landrover-albo-world-tour.webp); background-position: center; background-size: cover;margin-right: 20px;}
+.imageNic{background-image: url(/Images/the-team/Nick-traveller-world-tour.jpg); background-position: center; background-size: cover;margin-right: 20px;}
+.imageMat{background-image: url(/Images/the-team/Chew-world-traveller-mathilde.jpg); background-position:right; background-size: cover;margin-right: 20px;}
+.imageAlb{background-image: url(/Images/the-team/Landrover-albo-world-tour.jpg); background-position: center; background-size: cover;margin-right: 20px;}
 .aboutUsContainer{display: flex; width: 80%; max-width: 800px; margin: auto; align-items: center; padding-bottom: 5vh;}
 .aboutUsContainer:last-child{  margin-bottom:0; }
 .containerAboutList{padding-right: 5vw;
