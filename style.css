@@ -480,6 +480,11 @@ h2{font-size: 3rem; font-weight: 600;}
 .bigLogo{height: 85px;
   margin-left: -20px;
   margin-top: -10px;}
+ .adventurePortal{
+   height: 145px;
+  margin-left: -20px;
+  margin-top: -10px;
+  }
 
 /* about us section homepage */
 .aboutUsSplit{display: flex; padding: 15vh 20px 9vh 20px;}
