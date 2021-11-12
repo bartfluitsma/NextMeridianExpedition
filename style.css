@@ -244,6 +244,12 @@ display: flex;}
   position: relative;
   padding: 6vh 20px 6vh 20px;}
 
+@media screen and (max-width: 600px) {
+  
+
+.smallMobile{width: 70%;
+  margin-left: 15%;}
+}
 
   /* Timer section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -446,7 +452,6 @@ iframe{min-height: 300px;}
 .partnerDiv h2{text-align: left;}
 .logo-44{padding-right: 15px;}
 .mudstufflogo{max-width: 200px; margin-left: 5vw;}
-
 
 
 }
