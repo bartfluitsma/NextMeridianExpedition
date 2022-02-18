@@ -403,6 +403,18 @@ iframe{min-height: 200px;}
 .lineBreak{color: orange; opacity: 1; width: 75%;}
 .smallLogo{padding: 22px;}
 
+
+/* contact logos */
+
+.contactLogos{display: flex; max-width: 80vw; margin: auto; padding: 8vh 0px 15vh 0px; justify-content: space-around;}
+
+@media screen and (min-width: 800px) { 
+.contactLogos{display: flex; max-width: 55vw; }
+}
+@media screen and (min-width: 1200px) { 
+.contactLogos{display: flex; max-width: 35vw; }
+}
+
 @media screen and (min-width: 600px) {
 .mainImg{height: 100vh;}
 
@@ -434,6 +446,7 @@ iframe{min-height: 200px;}
 .contactUsImg{max-width: 500px; margin: auto;}
 .contactImg{height: 50px;}
 .contactUs div div div{display: block; width: auto; margin: auto; align-content: center; align-items: center;}
+
 
 /* ADVENTURE PAGE */
 .youtubeContainer{max-width: 80%; margin: auto;}
