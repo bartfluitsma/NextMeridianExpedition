@@ -1,445 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Next Meridian Expedition</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Meridian Expedition</title>
 
-<!--Favicon - logo in tab-->
-<link rel="shortcut icon" href="Images/Icons/Albatross.svg" type="image/svg">
+  <!--Favicon - logo in tab-->
+  <link rel="shortcut icon" href="Images/Icons/Albatross.svg" type="image/svg">
 
-<!--Let the robots follow-->
-<meta name="robots" content="index, follow">
+  <!--Let the robots follow-->
+  <meta name="robots" content="index, follow">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B540DBZ55"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B540DBZ55"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-3B540DBZ55');
-</script>
+    gtag('config', 'G-3B540DBZ55');
+  </script>
 
-<!-- https://fonts.gstatic.com is the font file origin -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- https://fonts.gstatic.com is the font file origin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- We use the full link to the CSS file in the rest of the tags -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" /> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" media="print" onload="this.media='all'" />
+  <!-- We use the full link to the CSS file in the rest of the tags -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" media="print"
+    onload="this.media='all'" />
 
-<!-- We use the full link to the CSS file in the rest of the tags -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" /> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" media="print" onload="this.media='all'" />
+  <!-- We use the full link to the CSS file in the rest of the tags -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" media="print"
+    onload="this.media='all'" />
 
-<!-- roboto font google -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
+  <!-- roboto font google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
 
-<!-- Bootstrap CSS CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<!-- personal CSS -->
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="cards.css">
+  <!-- personal CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cards.css">
 
-<!-- Boostrap JS -->
-<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Boostrap JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-<!-- jQuery google CDN -->
-<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jQuery google CDN -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- cards about -->
-<script defer src="cards.js"></script>
+  <!-- cards about -->
+  <script defer src="cards.js"></script>
 
-<!-- slick Slider CDN -->
-<script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- slick Slider CDN -->
+  <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<!-- JS script -->
-<script defer src="main.js"></script>
+  <!-- JS script -->
+  <script defer src="main.js"></script>
 
-<!-- meta data -->
-<meta name="description" content="We are Nick & Mathilde and we've left everything behind to go on a World Tour in our fully modified Landrover Defender 'Albatross'. 3 years - 7 continents - 88 countries - 300.000kms">
-<meta name="author" content="Next Meridian Expedition">
+  <!-- meta data -->
+  <meta name="description"
+    content="We are Nick & Mathilde and we've left everything behind to go on a World Tour in our fully modified Landrover Defender 'Albatross'. 3 years - 7 continents - 88 countries - 300.000kms">
+  <meta name="author" content="Next Meridian Expedition">
 
 </head>
+
 <body>
 
-<!-- navigation menu  -->
-<nav class="mainNav">
+  <!-- navigation menu  -->
+  <nav class="mainNav">
 
     <!--Logo-->
     <div class="logo">
       <a href="index.html"><img class="logo-img" src="Images/Icons/Albatross.svg" alt="Logo"></a>
     </div>
-              
+
     <!--the hamburger comes before the UL becuase we want to drop it down from here, but we want to flex it with the image above-->
     <div class="hamburger" id="hamburger">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
-              
+
     <ul class="nav-ul" id="nav-ul">
       <li><a class="colorLink1" href="index.html">Home</a></li>
       <li><a class="colorLink2" href="route.html">Route</a></li>
-      <li><a class="borderLink"  href="adventure.html">Follow the journey</a></li>
-      <li><a class="colorLink3"  href="about.html">About</a></li>
-      <li><a class="colorLink4"  href="partners.html">Partners</a></li>
-      <li><a class="colorLink1"  href="contact.html">Contact</a></li>
+      <li><a class="borderLink" href="adventure.html">Follow the journey</a></li>
+      <li><a class="colorLink3" href="about.html">About</a></li>
+      <li><a class="colorLink4" href="partners.html">Partners</a></li>
+      <li><a class="colorLink1" href="contact.html">Contact</a></li>
       <li>
         <div class="social-icons-nav">
-          <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank" rel="noopener noreferrer">
-        <img class="logoInsta" src="images/Icons/instagram-icon-color.svg" alt="instagram"></a>
-        <a href="https://www.facebook.com/NextMeridian.Expedition/" class="socialFollowIconNav" target="_blank" rel="noopener noreferrer">
-          <img class="logoInsta" src="images/Icons/facebook-icon-color.svg" alt="instagram"></a>
-          <a href="https://www.youtube.com/c/nextmeridianexpedition" class="socialFollowIconNav" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/nextmeridian.expedition/" class="socialFollowIconNav" target="_blank"
+            rel="noopener noreferrer">
+            <img class="logoInsta" src="images/Icons/instagram-icon-color.svg" alt="instagram"></a>
+          <a href="https://www.facebook.com/NextMeridian.Expedition/" class="socialFollowIconNav" target="_blank"
+            rel="noopener noreferrer">
+            <img class="logoInsta" src="images/Icons/facebook-icon-color.svg" alt="instagram"></a>
+          <a href="https://www.youtube.com/c/nextmeridianexpedition" class="socialFollowIconNav" target="_blank"
+            rel="noopener noreferrer">
             <img class="logoInsta" src="images/Icons/youtube-icon-color.svg" alt="instagram"></a>
         </div>
       </li>
     </ul>
-</nav>
+  </nav>
 
-<!-- main picture -->
-<div class="mainImgSection">
-     <picture>
-      <source media="(max-width: 600px)" srcset="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-900.jpg" sizes="100%">
-      <source media="(min-width: 601px)" srcset="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg">
-      <img class="img-fluid mainImg" src="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg" alt="Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover" height="100" width="100">
-   </picture>
-</div>
+  <!-- main picture -->
+  <div class="mainImgSection">
+    <picture>
+      <source media="(max-width: 600px)"
+        srcset="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-900.jpg"
+        sizes="100%">
+      <source media="(min-width: 601px)"
+        srcset="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg">
+      <img class="img-fluid mainImg"
+        src="Images/Posts/Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover-1920.jpg"
+        alt="Travelling-couple-standing-in-doors-opening-of-their-fully-equipt-landrover" height="100" width="100">
+    </picture>
+  </div>
 
-<!-- Intro -->
-<section class="intro">
+  <!-- Intro -->
+  <section class="intro">
     <h1>NEXT MERIDIAN EXPEDITION</h1>
-    <p>Hi! Nice to see you here. <br> We are Nick & Mathilde and we've left everything behind to go on a World Tour in our Landrover Defender <i>'Albatross'</i>. <br><br> Join us as we travel the world in our tiny home on wheels for the next 3 years! Going from one meridian to another, making new friends, exploring cultures & traditions, and road-tripping around this beautiful planet. <br><br> <strong class="colorText1">3 years - 7 continents - 88 countries - 300.000km</strong> </p>
-</section>
+    <p>Hi! Nice to see you here. <br> We are Nick & Mathilde and we've left everything behind to go on a World Tour in
+      our Landrover Defender <i>'Albatross'</i>. <br><br> Join us as we travel the world in our tiny home on wheels for
+      the next 3 years! Going from one meridian to another, making new friends, exploring cultures & traditions, and
+      road-tripping around this beautiful planet. <br><br> <strong class="colorText1">3 years - 7 continents - 88
+        countries - 300.000km</strong> </p>
+  </section>
 
-<!-- map  -->
-<div class="map">
+  <!-- map  -->
+  <div class="map">
     <div class="container">
-        <div class="row">
-          <div class="col-md mapImg">
-            <a href="route.html"><img class="img-fluid" src="Images/world-map-tour-grey.svg" 
-                    alt="World map with 3 years around the world route" height="100" width="600"></a>
-          </div>
+      <div class="row">
+        <div class="col-md mapImg">
+          <a href="route.html"><img class="img-fluid" src="Images/world-map-tour-grey.svg"
+              alt="World map with 3 years around the world route" height="100" width="600"></a>
         </div>
       </div>
-</div>
-
-
-<!-- countdown -->
-<!--timer section-->
-<section class="timerSection primaryColor">
-  <h2>Time to Departure</h2>
-  <div class="timerContainer">
-    <div class="timerSpecificContainer">
-      <p id="timerDays"></p>
-      <p>Days</p>
-    </div>
-  <p class="pointsTimer">:</p>
-    <div class="timerSpecificContainer">
-      <p id="timerHours"></p>
-      <p>Hours</p>
-    </div>
-    <p class="pointsTimer">:</p>
-
-    <div class="timerSpecificContainer">
-      <p id="timerMinutes"></p>
-      <p>Minutes</p>
-    </div>
-    <p class="pointsTimer">:</p>
-
-    <div class="timerSpecificContainer">
-      <p id="timerSeconds"></p>
-      <p>Seconds</p>
     </div>
   </div>
-</section>
 
-<!-- fullwidth img second -->
-<div class="fullWidthImg">
-     <picture>
+
+  <!-- countdown -->
+  <!--timer section-->
+  <section class="timerSection primaryColor">
+    <h2>Time to Departure</h2>
+    <div class="timerContainer">
+      <div class="timerSpecificContainer">
+        <p id="timerDays"></p>
+        <p>Days</p>
+      </div>
+      <p class="pointsTimer">:</p>
+      <div class="timerSpecificContainer">
+        <p id="timerHours"></p>
+        <p>Hours</p>
+      </div>
+      <p class="pointsTimer">:</p>
+
+      <div class="timerSpecificContainer">
+        <p id="timerMinutes"></p>
+        <p>Minutes</p>
+      </div>
+      <p class="pointsTimer">:</p>
+
+      <div class="timerSpecificContainer">
+        <p id="timerSeconds"></p>
+        <p>Seconds</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- fullwidth img second -->
+  <div class="fullWidthImg">
+    <picture>
       <source media="(max-width: 600px)" srcset="Images/Images-pages/Albatross-in-iceland-Home2-900.jpg" sizes="100%">
       <source media="(min-width: 601px)" srcset="Images/Images-pages/Albatross-in-iceland-Home2-1920.jpg">
-      <img class="img-fluid mainImg" src="Images/Images-pages/Albatross-in-iceland-Home2-1920.jpg" 
-      alt="Albatross driving in Iceland" height="100" width="100">
-   </picture>
-</div>
+      <img class="img-fluid mainImg" src="Images/Images-pages/Albatross-in-iceland-Home2-1920.jpg"
+        alt="Albatross driving in Iceland" height="100" width="100">
+    </picture>
+  </div>
 
 
-<!-- about us section -->
-<div class="aboutUsSplit">
-<div class="theTeam">
-  <h3>The team</h3>
-    <p>Our motto.
-      <br>
-      One life: unlimited realities to live.
-      <br>
-      Everything is possible when you chose to get out there.
-      <br>
-      Live your adventure.
-      <br>
-      Explore the unknown.
-      <br>
-      We are loving it!
-    </p>
-</div>
-<!-- mobile -->
+  <!-- about us section -->
+  <div class="aboutUsSplit">
+    <div class="theTeam">
+      <h3>The team</h3>
+      <p>Our motto.
+        <br>
+        One life: unlimited realities to live.
+        <br>
+        Everything is possible when you chose to get out there.
+        <br>
+        Live your adventure.
+        <br>
+        Explore the unknown.
+        <br>
+        We are loving it!
+      </p>
+    </div>
+    <!-- mobile -->
     <div class="containerCards hideOnDesktop">
       <div class="card-carousel">
         <div class="card" id="1">
           <div class="image-container"></div>
           <h4>Albatross, 9 y/o (Albo)</h4>
-          <p>Land Rover Defender, TD4 2.2L Turbo Diesel Puma, 2012 model. Ex-Tec interior and pop-up.. <a href="about.html#Albatross" class="colorLink3">Continue reading</a></p>
+          <p>Land Rover Defender, TD4 2.2L Turbo Diesel Puma, 2012 model. Ex-Tec interior and pop-up.. <a
+              href="about.html#Albatross" class="colorLink3">Continue reading</a></p>
 
         </div>
 
         <div class="card" id="2">
           <div class="image-container"></div>
           <h4>Mathilde Vougny (Chew)</h4>
-          <p>Born in France, lived in Europe 26 years, 1 year in Argentina and 1 year in Jordan. <a class="colorLink1" href="about.html#Mathilde">Continue reading</a></p>
-          
+          <p>Born in France, lived in Europe 26 years, 1 year in Argentina and 1 year in Jordan. <a class="colorLink1"
+              href="about.html#Mathilde">Continue reading</a></p>
+
         </div>
-        
+
         <div class="card" id="3">
           <div class="image-container"></div>
           <h4>Nicolas Chazee (Nick)</h4>
-          <p> Born in Thailand, lived in Asia for 12 years, 6 in Africa and 10 in Europe. Previously travelled.. <a class="colorLink2" href="about.html#Nicolas">Continue reading</a></p>
+          <p> Born in Thailand, lived in Asia for 12 years, 6 in Africa and 10 in Europe. Previously travelled.. <a
+              class="colorLink2" href="about.html#Nicolas">Continue reading</a></p>
 
-        </div>  
+        </div>
       </div>
     </div>
-     <!-- desktop  -->
-     <div class="containerAboutList hideOnMobile">
+    <!-- desktop  -->
+    <div class="containerAboutList hideOnMobile">
       <a href="about.html#Nicolas">
         <div class="aboutUsContainer">
           <div class="roundImgSmall imageNic"></div>
           <div class="textAboutNME">
             <p>
-            <strong>Nicolas Chazee, 28 y/o (Nick)</strong> <i>FRANCE/ITALY</i></p>
+              <strong>Nicolas Chazee, 28 y/o (Nick)</strong> <i>FRANCE/ITALY</i>
+            </p>
             <p class="distanceSpan">
-            <strong>BACKGROUND</strong>: International Business, developed internationally a top 120 French Start-Up to neighbouring European countries.
-          </p>
-          <p>
-            <strong>TRAVEL HISTORY</strong>: Born in Thailand, lived in Asia for 12 years, 6 in Africa and 10 in Europe. Previously travelled to 56 countries before departure on every continent. It's time for the BIG trip.
-          </p>
+              <strong>BACKGROUND</strong>: International Business, developed internationally a top 120 French Start-Up
+              to neighbouring European countries.
+            </p>
+            <p>
+              <strong>TRAVEL HISTORY</strong>: Born in Thailand, lived in Asia for 12 years, 6 in Africa and 10 in
+              Europe. Previously travelled to 56 countries before departure on every continent. It's time for the BIG
+              trip.
+            </p>
+          </div>
         </div>
-      </div></a>
+      </a>
 
       <a href="about.html#Mathilde">
-      <div class="aboutUsContainer">
+        <div class="aboutUsContainer">
           <div class="roundImgSmall imageMat"></div>
           <div class="aboutUsDescription">
             <div class="textAboutNME">
-          <p><strong>Mathilde Vougny, 28 y/o (Chew)</strong> <i>FRANCE</i></p>
-          <p class="distanceSpan">
-            <strong>BACKGROUND</strong>: International relations, political sciences, worked for UNDP as a program specialist for electoral assistance.
-            </p>
-            <p>
-            <strong>TRAVEL HISTORY</strong>: Born in France, lived in Europe for 26 years, 1 year in Jordan, 1 year in Argentina and 1 year in the USA. Previously travelled to 52 countries before departure. It's time for the BIG trip.
-          </p>
+              <p><strong>Mathilde Vougny, 28 y/o (Chew)</strong> <i>FRANCE</i></p>
+              <p class="distanceSpan">
+                <strong>BACKGROUND</strong>: International relations, political sciences, worked for UNDP as a program
+                specialist for electoral assistance.
+              </p>
+              <p>
+                <strong>TRAVEL HISTORY</strong>: Born in France, lived in Europe for 26 years, 1 year in Jordan, 1 year
+                in Argentina and 1 year in the USA. Previously travelled to 52 countries before departure. It's time for
+                the BIG trip.
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-    </a>
+      </a>
 
-    <a href="about.html#Albatross">
-      <div class="aboutUsContainer">
+      <a href="about.html#Albatross">
+        <div class="aboutUsContainer">
           <div class="roundImgSmall imageAlb"></div>
           <div class="textAboutNME">
-          <p><strong>Albatross, 10 y/o (Albo)</strong> <i>UNITED KINGDOM</i></p>
-          <p class="distanceSpan">
-            <strong>BACKGROUND</strong>: Land Rover Defender, TD4 2.2L Turbo Diesel Puma, 2012 model. Ex-Tec interior and pop-up roof, 16" BFG tires, VisionX lighting, T-Max winch, Engel Fridge, Coleman stove, MaMousse mattress and tons of other custom made furniture and utility parts. It's time for the BIG trip.
-          </p>
-          <p>
-            <strong>TRAVEL HISTORY</strong>: The Americas, Morocco, France, Belgium, Sweden, Faroe island, Iceland.
-          
-          </p>
+            <p><strong>Albatross, 10 y/o (Albo)</strong> <i>UNITED KINGDOM</i></p>
+            <p class="distanceSpan">
+              <strong>BACKGROUND</strong>: Land Rover Defender, TD4 2.2L Turbo Diesel Puma, 2012 model. Ex-Tec interior
+              and pop-up roof, 16" BFG tires, VisionX lighting, T-Max winch, Engel Fridge, Coleman stove, MaMousse
+              mattress and tons of other custom made furniture and utility parts. It's time for the BIG trip.
+            </p>
+            <p>
+              <strong>TRAVEL HISTORY</strong>: The Americas, Morocco, France, Belgium, Sweden, Faroe island, Iceland.
+
+            </p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
 
     </div>
 
-</div>
-<br>
+  </div>
+  <br>
 
-<!-- fullwidth img third-->
-<div class="fullWidthImg thirdPicture">
-     <picture>
-      <source media="(max-width: 600px)" srcset="Images/Images-pages/Albatross-driving-on-dirt-road-Home3-900.jpg" sizes="100%">
+  <!-- fullwidth img third-->
+  <div class="fullWidthImg thirdPicture">
+    <picture>
+      <source media="(max-width: 600px)" srcset="Images/Images-pages/Albatross-driving-on-dirt-road-Home3-900.jpg"
+        sizes="100%">
       <source media="(min-width: 601px)" srcset="Images/Images-pages/Albatross-driving-on-dirt-road-Home3-1920.jpg">
-      <img class="img-fluid mainImg" src="Images/Images-pages/Albatross-driving-on-dirt-road-Home3-1920.jpg" 
-      alt="Albatross driving on dirt road in iceland" height="100" width="100">
-   </picture>
-</div>
-
-<!--Company logos section-->
-<div class="container companyLogosSection">
-<div class="row">
-
-<div class="col-sm">
-  <!-- Partners -->
-  <div class="companyLogoCointainer">
-    <h3 class="publications"><strong>Partners</strong></h3>
-    <p class="smallTxt"> <i>(click on the logo to discover them)</i></p>
-    <div class="companyLogos">
-        <div>
-          <a class="logoLink" href="partners.html#euro4x4parts">
-            <img class="companyLogo smallMobile" src="Images/Icons/Companies/4X4-logo-color.svg" alt="logo-4X4"></a>
-        </div>
-        <div>
-        <a class="logoLink" href="partners.html#sunware">
-            <img class="companyLogo" src="Images/Icons/Companies/Sunware-logo-color.svg" alt="Sunware logo"></a>
-        </div>
-        <div>
-          <a class="logoLink" href="partners.html#bartfluitsma">
-              <img class="companyLogo" src="Images/Icons/Companies/bartfluitsma-webdev-logo-color.svg" alt="Bart Fluitsma webdev logo"></a>
-          </div>
-    </div>
-    <div class="companyLogos">
-      <div>
-        <a class="logoLink" href="partners.html#mudstuff">
-          <img class="companyLogo" src="Images/Icons/Companies/Mud-UK-Logo.svg" alt="Mudstuff"></a>
-      </div>
-      <div>
-      <a class="logoLink" href="partners.html#roverLand">
-          <img class="companyLogo smallMobile" src="Images/Icons/Companies/roverland-logo.svg" alt="RoverLand logo"></a>
-      </div>
-      <div>
-        <a class="logoLink" href="partners.html#roughparts">
-            <img class="companyLogo smallMobile" src="Images/Icons/Companies/logo_roughparts.svg" alt="Rough Parts logo"></a>
-        </div>
+      <img class="img-fluid mainImg" src="Images/Images-pages/Albatross-driving-on-dirt-road-Home3-1920.jpg"
+        alt="Albatross driving on dirt road in iceland" height="100" width="100">
+    </picture>
   </div>
 
-  <div class="companyLogos">
+  <!--Company logos section-->
+  <div class="container companyLogosSection">
+    <div class="row">
+
+      <div class="col-sm">
+        <!-- Partners -->
+        <div class="companyLogoCointainer">
+          <h3 class="publications"><strong>Partners</strong></h3>
+          <p class="smallTxt"> <i>(click on the logo to discover them)</i></p>
+          <div class="companyLogos">
+            <div>
+              <a class="logoLink" href="partners.html#euro4x4parts">
+                <img class="companyLogo smallMobile" src="Images/Icons/Companies/4X4-logo-color.svg" alt="logo-4X4"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="partners.html#sunware">
+                <img class="companyLogo" src="Images/Icons/Companies/Sunware-logo-color.svg" alt="Sunware logo"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="partners.html#bartfluitsma">
+                <img class="companyLogo" src="Images/Icons/Companies/bartfluitsma-webdev-logo-color.svg"
+                  alt="Bart Fluitsma webdev logo"></a>
+            </div>
+          </div>
+          <div class="companyLogos">
+            <div>
+              <a class="logoLink" href="partners.html#mudstuff">
+                <img class="companyLogo" src="Images/Icons/Companies/Mud-UK-Logo.svg" alt="Mudstuff"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="partners.html#roverLand">
+                <img class="companyLogo smallMobile" src="Images/Icons/Companies/roverland-logo.svg"
+                  alt="RoverLand logo"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="partners.html#roughparts">
+                <img class="companyLogo smallMobile" src="Images/Icons/Companies/logo_roughparts.svg"
+                  alt="Rough Parts logo"></a>
+            </div>
+          </div>
+
+          <div class="companyLogos">
+            <div>
+              <a class="logoLink" href="partners.html#jackery">
+                <img class="companyLogo" src="Images/Icons/Companies/Jackery-DE.svg" alt="Jackery DE logo"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="partners.html#Chapka">
+                <img class="companyLogo" src="Images/Icons/Companies/Chapka-logo-colour.svg" alt="Chapka logo"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="partners.html#EnergieMobile">
+                <img class="companyLogo" src="Images/Icons/Companies/Energie-mobile-logo-color.svg" alt="Energie Mobile logo"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm">
+        <hr class="hideOnDesktop lineBreak">
+        <div class="companyLogoCointainer companyBorderLeft">
+
+          <!-- publications -->
+          <h3 class="publications"><strong>Publications</strong></h3>
+          <p class="smallTxt"> <i>(click on the logo to have a read)</i></p>
+
+          <div class="companyLogos">
+            <div>
+              <a class="logoLink"
+                href="https://www.explmore.com/publication-stories/nicolas-and-mathilde-next-meridian-expedition"
+                target="_blank" rel="noopener noreferrer">
+                <img class="companyLogo smallMobile" src="Images/Icons/Companies/explmore-logo-color.svg"
+                  alt="Explmore"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="http://www.landmag.fr/boutique/land-supercharged-46/" target="_blank"
+                rel="noopener noreferrer">
+                <img class="companyLogo smallMobile" src="Images/Icons/Companies/Land-mag-logo-color.svg"
+                  alt="LandMag"></a>
+            </div>
+            <div>
+              <a class="logoLink"
+                href="http://blog.euro4x4parts.com/en/4x4travel.html#!en_cours/article/6356/Next_Meridian_Expedition"
+                target="_blank" rel="noopener noreferrer">
+                <img class="companyLogo smallMobile" src="Images/Icons/Companies/4X4-logo-color.svg"
+                  alt="Euro4x4parts"></a>
+            </div>
+
+          </div>
+
+          <div class="companyLogos">
+            <div>
+              <a class="logoLink" href="https://theadventureportal.com/a-world-tour-in-our-2012-land-rover-defender/"
+                target="_blank" rel="noopener noreferrer">
+                <img class="companyLogo" src="Images/Icons/Companies/the-adventure-portal-logo.svg"
+                  alt="The adventure portal logo"></a>
+            </div>
+            <div>
+              <a class="logoLink"
+                href="https://www.4x4magazine.it/2021/10/19/quando-unidea-diventa-realta-il-giro-del-mondo-a-bordo-di-un-defender/"
+                target="_blank" rel="noopener noreferrer">
+                <img class="companyLogo" src="Images/Icons/Companies/4x4-magazine-it.svg"
+                  alt="4x4 Magazine IT logo"></a>
+            </div>
+            <div>
+              <a class="logoLink" href="https://outdoorx4.com" target="_blank" rel="noopener noreferrer">
+                <img class="companyLogo " src="Images/Icons/Companies/Outdoor-X4.svg" alt="OutdoorX4"></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--follow us section-->
+  <h3 class="followUsText"><strong>Follow our journey</strong></h3>
+
+  <div class="followUsContainer">
+    <div class="followUsLogos">
       <div>
-        <a class="logoLink" href="partners.html#jackery">
-          <img class="companyLogo" src="Images/Icons/Companies/Jackery-DE.svg" alt="Jackery DE logo"></a>
-      </div>
-</div>
-  
-  </div>
-  </div>
-  <div class="col-sm">
-    <hr class="hideOnDesktop lineBreak">
-    <div class="companyLogoCointainer companyBorderLeft">
-      
-      <!-- publications -->
-      <h3 class="publications"><strong>Publications</strong></h3>
-      <p class="smallTxt"> <i>(click on the logo to have a read)</i></p>
-      
-      <div class="companyLogos">
-          <div>
-          <a class="logoLink" href="https://www.explmore.com/publication-stories/nicolas-and-mathilde-next-meridian-expedition" target="_blank" rel="noopener noreferrer">
-              <img class="companyLogo smallMobile" src="Images/Icons/Companies/explmore-logo-color.svg" alt="Explmore"></a>
-          </div>
-          <div>
-          <a class="logoLink" href="http://www.landmag.fr/boutique/land-supercharged-46/" target="_blank" rel="noopener noreferrer">
-              <img class="companyLogo smallMobile" src="Images/Icons/Companies/Land-mag-logo-color.svg" alt="LandMag"></a>
-          </div>
-          <div>
-            <a class="logoLink" href="http://blog.euro4x4parts.com/en/4x4travel.html#!en_cours/article/6356/Next_Meridian_Expedition" target="_blank" rel="noopener noreferrer">
-              <img class="companyLogo smallMobile" src="Images/Icons/Companies/4X4-logo-color.svg" alt="Euro4x4parts"></a>
-          </div>
-
-      </div>
-
-      <div class="companyLogos">
-        <div>
-        <a class="logoLink" href="https://theadventureportal.com/a-world-tour-in-our-2012-land-rover-defender/" target="_blank" rel="noopener noreferrer">
-            <img class="companyLogo" src="Images/Icons/Companies/the-adventure-portal-logo.svg" alt="The adventure portal logo"></a>
-        </div>
-        <div>
-        <a class="logoLink" href="https://www.4x4magazine.it/2021/10/19/quando-unidea-diventa-realta-il-giro-del-mondo-a-bordo-di-un-defender/" target="_blank" rel="noopener noreferrer">
-            <img class="companyLogo" src="Images/Icons/Companies/4x4-magazine-it.svg" alt="4x4 Magazine IT logo"></a>
-        </div> 
-        <div>
-          <a class="logoLink" href="https://outdoorx4.com" target="_blank" rel="noopener noreferrer">
-            <img class="companyLogo " src="Images/Icons/Companies/Outdoor-X4.svg" alt="OutdoorX4"></a>
-        </div>
-    </div>
-      
-    </div>
-    </div>
-</div>
-</div>
-
-<!--follow us section-->
-<h3 class="followUsText"><strong>Follow our journey</strong></h3>
-
-<div class="followUsContainer">
-  <div class="followUsLogos">
-    <div>
-      <a class="logoLink" href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
+        <a class="logoLink" href="https://www.instagram.com/nextmeridian.expedition" target="_blank"
+          rel="noopener noreferrer">
           <img class="followUsIcon" src="Images/Icons/instagram-light.svg" alt="Instagram icon">
-        </a></div>
+        </a>
+      </div>
 
       <div>
-      <a class="logoLink" href="https://www.youtube.com/c/nextmeridianexpedition" target="_blank" rel="noopener noreferrer">
+        <a class="logoLink" href="https://www.youtube.com/c/nextmeridianexpedition" target="_blank"
+          rel="noopener noreferrer">
           <img class="followUsIcon" src="Images/Icons/youtube-icon.svg" alt="Youtube Icon"></a>
       </div>
 
       <div>
-        <a class="logoLink" href="https://www.facebook.com/NextMeridian.Expedition/" target="_blank" rel="noopener noreferrer">
-            <img class="followUsIcon" src="Images/Icons/facebook-icon.svg" alt="facebook-icon"></a>
-        </div>
+        <a class="logoLink" href="https://www.facebook.com/NextMeridian.Expedition/" target="_blank"
+          rel="noopener noreferrer">
+          <img class="followUsIcon" src="Images/Icons/facebook-icon.svg" alt="facebook-icon"></a>
+      </div>
 
+    </div>
   </div>
-</div>
 
-<!-- Images carousel -->
-<div class="socialInstaFollow">
-<br>
-<a href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
-<div class="imageCarouselSection">
-    <div class="your-class">
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep.JPG" alt="Albatross Jeep" width="400" height="100" loading="lazy">
+  <!-- Images carousel -->
+  <div class="socialInstaFollow">
+    <br>
+    <a href="https://www.instagram.com/nextmeridian.expedition" target="_blank" rel="noopener noreferrer">
+      <div class="imageCarouselSection">
+        <div class="your-class">
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep.JPG" alt="Albatross Jeep" width="400"
+              height="100" loading="lazy">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/cave-water-iceland.JPG" alt="Water cave in Iceland"
+              width="400" height="100">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep-iceland.JPG"
+              alt="Land Rover Albatross in Iceland" width="400" height="100" loading="lazy">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/nicolas-iceland.JPG"
+              alt="World traveller Nicolas in Iceland" width="400" height="100" loading="lazy">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/albatross.JPG" alt="Land Rover Albatross" width="400"
+              height="100" loading="lazy">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/jeep-iceland-roads.JPG"
+              alt="Land Rover Albatross on Iceland roads" width="400" height="100" loading="lazy">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/house-iceland.JPG" alt="Little house in Iceland"
+              width="400" height="100" loading="lazy">
+          </div>
+          <div>
+            <img src="images/Social-media/Instagram/Thumbnails/the-team.JPG" alt="The Next Meridian Expedition team"
+              width="400" height="100" loading="lazy">
+          </div>
         </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/cave-water-iceland.JPG" alt="Water cave in Iceland" width="400" height="100"></div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/albatross-jeep-iceland.JPG" alt="Land Rover Albatross in Iceland" width="400" height="100" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/nicolas-iceland.JPG" alt="World traveller Nicolas in Iceland" width="400" height="100" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/albatross.JPG" alt="Land Rover Albatross" width="400" height="100" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/jeep-iceland-roads.JPG" alt="Land Rover Albatross on Iceland roads" width="400" height="100" loading="lazy"></div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/house-iceland.JPG" alt="Little house in Iceland" width="400" height="100" loading="lazy">
-        </div>
-        <div>
-            <img src="images/Social-media/Instagram/Thumbnails/the-team.JPG" alt="The Next Meridian Expedition team" width="400" height="100" loading="lazy">
-        </div>
-        </div>
-      
-</div>
-</a>
-</div>
+
+      </div>
+    </a>
+  </div>
 
 
-<!--Footer navigation-->
-<nav class="footerNav primaryColor">
+  <!--Footer navigation-->
+  <nav class="footerNav primaryColor">
     <!-- colors brand -->
-<div class="colors">
-  <div class="colorLine color1"><a class="footerNavItem" href="route.html">Route</a></div>
-  <div class="colorLine color2"><a class="footerNavItem" href="about.html">About</a></div>
-  <div class="colorLine color4"><a class="footerNavItem" href="adventure.html">The Adventure</a></div>
-  <div class="colorLine color3"><a class="footerNavItem" href="contact.html">Contact</a></div>
-</div>
-</nav>
+    <div class="colors">
+      <div class="colorLine color1"><a class="footerNavItem" href="route.html">Route</a></div>
+      <div class="colorLine color2"><a class="footerNavItem" href="about.html">About</a></div>
+      <div class="colorLine color4"><a class="footerNavItem" href="adventure.html">The Adventure</a></div>
+      <div class="colorLine color3"><a class="footerNavItem" href="contact.html">Contact</a></div>
+    </div>
+  </nav>
 
 
-<script>
-var countDownDate=new Date("Apr 18, 2022 08:00:00").getTime(),x=setInterval(function(){var e=(new Date).getTime(),t=countDownDate-e,n=Math.floor(t/864e5),r=Math.floor(t%864e5/36e5),o=Math.floor(t%36e5/6e4),m=Math.floor(t%6e4/1e3);document.getElementById("timerDays").innerHTML=n,document.getElementById("timerHours").innerHTML=r,document.getElementById("timerMinutes").innerHTML=o,document.getElementById("timerSeconds").innerHTML=m,t<0&&(clearInterval(x),document.getElementById("timer").innerHTML="EXPIRED")},1e3);
-</script>
+  <script>
+    var countDownDate = new Date("Apr 18, 2022 08:00:00").getTime(), x = setInterval(function () { var e = (new Date).getTime(), t = countDownDate - e, n = Math.floor(t / 864e5), r = Math.floor(t % 864e5 / 36e5), o = Math.floor(t % 36e5 / 6e4), m = Math.floor(t % 6e4 / 1e3); document.getElementById("timerDays").innerHTML = n, document.getElementById("timerHours").innerHTML = r, document.getElementById("timerMinutes").innerHTML = o, document.getElementById("timerSeconds").innerHTML = m, t < 0 && (clearInterval(x), document.getElementById("timer").innerHTML = "EXPIRED") }, 1e3);
+  </script>
 
 </body>
+
 </html>
