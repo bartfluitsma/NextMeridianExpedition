@@ -397,7 +397,7 @@ iframe{min-height: 200px;}
 .partnerText{max-width: 500px;  margin: auto;}
 
 /* gps positon */
-.GPSpositionBox{width: 250px; margin: auto;}
+.GPSpositionBox{width: 250px; margin: auto;} 
 
 /* logos sponsors */
 .lineBreak{color: orange; opacity: 1; width: 75%;}
