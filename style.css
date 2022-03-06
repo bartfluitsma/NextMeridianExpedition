@@ -358,13 +358,14 @@ font-weight: 300;}
 /* ROUTE PAGE */
 .titleLegs{text-align: center; padding: 8vh 10px;}
 .legsRouteSection{padding: 20px;}
-.legsRoute1{padding: 0; width: 95%; margin: auto;}
+.legsRoute1{padding: 0; width: 100%; margin: auto;}
 .legsRoute2{padding: 0; width: 100%; margin: auto;}
-.legsRoute3{padding: 0; width: 90%; margin: auto;}
+.legsRoute3{padding: 0; width: 100%; margin: auto;}
 .modal-body img{padding: 5vh 20px;}
 .modal-content{background-color: transparent; }
 .modal-footer, .modal-header{border: none;}
 .modal-body{border-radius: 5px;}
+.modal-dialog{max-width: none;}
 
 /* CONTACT PAGE */
 .contactUs p{max-width: 600px; margin: auto;}
@@ -382,7 +383,7 @@ iframe{min-height: 200px;}
 .GPSsection h2, .GPSsection h3{text-align: center;}
 .patreonlogo{max-width: 250px; margin: auto; padding: 5vh 20px 8vh 20px; filter: grayscale(1);}
 .patreonlogo:hover{filter: none; cursor: pointer;}
-.adventurediv{padding: 5vh 20px 10vh 20px;}
+.adventurediv{padding: 0vh 20px 13vh 20px; margin-top: -5vh;}
 .adventurediv h2{text-align: center;}
 .followPatreon{max-width: 500px; margin: auto;}
 .patreonRow{max-width: 900px; margin: auto;}
@@ -403,6 +404,9 @@ iframe{min-height: 200px;}
 .lineBreak{color: orange; opacity: 1; width: 75%;}
 .smallLogo{padding: 22px;}
 
+/* patreon link */
+.patreonContainer{display: grid; place-items: center;}
+.patreonLink{justify-content: center;}
 
 /* contact logos */
 
@@ -437,8 +441,8 @@ iframe{min-height: 200px;}
 .legsRouteSection img{max-height: 100%; padding-bottom: 5vh;}
 .legsRouteSection{padding: 5vh 20px 10vh 20px;}
 .legsRoute1{padding: 0px;}
-.legsRoute2{padding: 50px; padding-top: 0;}
-.legsRoute3{padding: 30px; padding-top: 0;}
+.legsRoute2{padding: 10px; padding-top: 0;}
+.legsRoute3{padding: 10px; padding-top: 0;}
 
 
 /* CONTACT PAGE */
@@ -455,7 +459,7 @@ iframe{min-height: 300px;}
 .centerTitle{text-align: center;}
 .GPSsection{padding: 5vh 0px;}
 .patreonlogo{max-width: 350px; }
-.adventurediv{padding: 16vh 20px 12vh 20px;}
+.adventurediv{padding: 10vh 20px 15vh 20px;}
 
 /* PARTNERS */
 .partner-logo{padding-top: 18vh; max-width: 380px; margin: 0vh 5vw;} 
@@ -610,7 +614,7 @@ nav li {
 .nav-ul li .colorLink4{box-shadow: none;}
 
 .companyLogoCointainer {
-  padding: 3vh 20px 5vh 20px;
+  padding: 3vh 20px 11vh 20px;
 }
 
 .companyLogosSection{padding-bottom: 10vh;}
