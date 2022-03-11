@@ -217,7 +217,7 @@ hr{height: 3px;
 /* follow us logos */
 .followUsContainer{position: relative;
     height: 5px;
-    margin: 5vh 0px 12px 0px;}
+    margin: 5vh 0px 7vh 0px;}
 .followUsLogos{margin: 0;
   position: absolute;
   top: 50%;
@@ -409,8 +409,54 @@ iframe{min-height: 200px;}
 .patreonLink{justify-content: center;}
 
 /* contact logos */
-
 .contactLogos{display: flex; max-width: 80vw; margin: auto; padding: 8vh 0px 15vh 0px; justify-content: space-around;}
+
+/* Signup form */
+.signupForm {
+  background-color: #231f20 !important;
+  padding-bottom: 0vh;
+  display: grid;
+  place-items: center;
+}
+
+
+.signupFormInput {
+  max-width: 100%;
+  width: 300px;
+  text-align: center !important;
+}
+
+#mc_embed_signup form {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding: 2vh 0px !important;
+
+}
+
+.button{
+  width: 100% !important;
+}
+
+#mc_embed_signup .button{
+  background-color: #fff !important;
+  color: #030303 !important;
+  font-size: 15px !important;
+  height: 40px !important;
+  margin: 0 5px 10px 0 !important;
+  padding: 0 26px !important;
+  text-decoration: none !important;
+  letter-spacing: 0.5px !important;
+}
+#mc_embed_signup .button:hover{
+  background-color: rgb(170, 165, 165) !important;
+
+}
+
+
+#mc_embed_signup .foot{
+  grid-template-columns: none !important;
+}
 
 @media screen and (min-width: 800px) { 
 .contactLogos{display: flex; max-width: 55vw; }
