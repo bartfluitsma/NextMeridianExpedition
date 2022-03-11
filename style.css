@@ -467,6 +467,10 @@ iframe{min-height: 200px;}
   padding: 10px;
 }
 
+input{
+  color: #000 !important;
+}
+
 @media screen and (min-width: 800px) { 
 .contactLogos{display: flex; max-width: 55vw; }
 }
