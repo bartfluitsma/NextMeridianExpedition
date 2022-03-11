@@ -438,7 +438,7 @@ iframe{min-height: 200px;}
   width: 100% !important;
 }
 
-#mc_embed_signup .button{
+.buttonSignup{
   background-color: #fff !important;
   color: #030303 !important;
   font-size: 15px !important;
@@ -448,7 +448,7 @@ iframe{min-height: 200px;}
   text-decoration: none !important;
   letter-spacing: 0.5px !important;
 }
-#mc_embed_signup .button:hover{
+.buttonSignup:hover{
   background-color: rgb(170, 165, 165) !important;
 
 }
@@ -456,6 +456,15 @@ iframe{min-height: 200px;}
 
 #mc_embed_signup .foot{
   grid-template-columns: none !important;
+}
+
+.inputHolder {
+  border-color: #6B0505;
+  width: 100% !important;
+  height: 45px !important;
+  color: #000 !important;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 800px) { 
