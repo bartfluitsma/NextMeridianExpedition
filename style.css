@@ -470,6 +470,7 @@ iframe{min-height: 200px;}
 input{
   color: #000 !important;
   padding: 10px !important;
+  width: 100% !important;
 }
 
 @media screen and (min-width: 800px) { 
